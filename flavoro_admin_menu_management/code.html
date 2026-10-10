@@ -1,0 +1,132 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed-variant":"#713700","on-primary-fixed-variant":"#2b4d44","on-background":"#1b1c1c","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","inverse-surface":"#303030","on-tertiary-fixed-variant":"#484742","on-tertiary-fixed":"#1c1c18","error-container":"#ffdad6","on-secondary-fixed":"#301400","secondary-container":"#fc8f34","surface-container-high":"#eae8e7","on-primary-fixed":"#00201a","tertiary-fixed-dim":"#c9c6c0","error":"#ba1a1a","surface-bright":"#fbf9f8","surface-container":"#f0eded","background":"#fbf9f8","secondary-fixed":"#ffdcc5","tertiary-fixed":"#e6e2db","outline-variant":"#c1c8c4","on-error":"#ffffff","on-secondary":"#ffffff","primary":"#01261f","on-error-container":"#93000a","on-primary":"#ffffff","surface-container-low":"#f6f3f2","inverse-on-surface":"#f3f0f0","primary-container":"#1a3c34","tertiary":"#21211d","surface-tint":"#43655c","on-surface-variant":"#414846","on-surface":"#1b1c1c","on-tertiary-container":"#a19f99","secondary":"#944a00","outline":"#717976","inverse-primary":"#aacec3","surface":"#fbf9f8","primary-fixed":"#c5eadf","surface-dim":"#dcd9d9","secondary-fixed-dim":"#ffb783","on-primary-container":"#83a69c","surface-container-highest":"#e4e2e1","primary-fixed-dim":"#aacec3","surface-variant":"#e4e2e1","on-secondary-container":"#663100","tertiary-container":"#373632"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"24px","unit":"8px","container-max":"1200px","section-gap":"80px","margin-mobile":"20px"},"fontFamily":{"body-lg":["Plus Jakarta Sans"],"headline-lg":["DM Serif Display"],"body-md":["Plus Jakarta Sans"],"display-lg-mobile":["DM Serif Display"],"headline-md":["DM Serif Display"],"display-lg":["DM Serif Display"],"title-lg":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"]},"fontSize":{"body-lg":["18px",{"lineHeight":"30px","fontWeight":"400"}],"headline-lg":["48px",{"lineHeight":"56px","fontWeight":"400"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-lg-mobile":["40px",{"lineHeight":"48px","fontWeight":"400"}],"headline-md":["32px",{"lineHeight":"40px","fontWeight":"400"}],"display-lg":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"400"}],"title-lg":["20px",{"lineHeight":"28px","fontWeight":"700"}],"label-caps":["14px",{"lineHeight":"20px","letterSpacing":"0.1em","fontWeight":"800"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-full mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[28px]">restaurant_menu</span><span class="font-headline-md text-[24px] text-primary tracking-tight">Flavoro Admin</span></div><div class="flex items-center gap-4"><a class="font-label-caps text-[12px] text-on-surface-variant hover:text-secondary" data-path="home" href="#">BACK TO SITE</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 h-[calc(100vh-64px)] w-64 bg-surface-container-low border-r border-outline-variant z-40"><nav class="p-4 flex flex-col gap-1" data-active-classes="bg-primary text-on-primary font-bold"><a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-caps text-label-caps" data-path="dashboard" href="#">DASHBOARD</a><a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-caps text-label-caps" data-path="reservations" href="#">RESERVATIONS</a><a aria-current="page" class="flex items-center px-4 py-3 rounded-lg transition-colors bg-primary text-on-primary font-bold" data-path="menu-management" href="#">MENU MANAGEMENT</a><a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-caps text-label-caps" data-path="staff" href="#">STAFF</a><a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-caps text-label-caps" data-path="analytics" href="#">ANALYTICS</a></nav></aside><main class="pl-64 pt-16 w-full"><div class="flex flex-col w-full">
+<div class="px-gutter py-8 flex flex-col gap-section-gap">
+<!-- Header Section -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+<div class="flex flex-col gap-2">
+<h1 class="font-headline-lg text-headline-lg text-primary">Menu Management</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Curate your culinary offerings, manage availability, and update pricing in real-time.</p>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-3 rounded-full font-title-lg text-title-lg hover:bg-secondary-container hover:text-on-secondary-container transition-colors shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">add</span>
+        Add New Item
+      </button>
+</div>
+<!-- Filters & Search -->
+<div class="bg-surface-container-low rounded-xl p-4 shadow-sm flex flex-col md:flex-row gap-4 justify-between items-center relative z-10">
+<!-- Search -->
+<div class="relative w-full md:w-96">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full bg-surface py-3 pl-12 pr-4 rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary transition-all shadow-sm placeholder:text-outline-variant" placeholder="Search menu items..." type="text"/>
+</div>
+<!-- Categories -->
+<div class="flex gap-2 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 scrollbar-hide">
+<button class="px-6 py-2 rounded-full bg-primary text-on-primary font-label-caps text-label-caps whitespace-nowrap shadow-sm">ALL ITEMS</button>
+<button class="px-6 py-2 rounded-full bg-surface hover:bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps whitespace-nowrap transition-colors shadow-sm">STARTERS</button>
+<button class="px-6 py-2 rounded-full bg-surface hover:bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps whitespace-nowrap transition-colors shadow-sm">MAINS</button>
+<button class="px-6 py-2 rounded-full bg-surface hover:bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps whitespace-nowrap transition-colors shadow-sm">DESSERTS</button>
+<button class="px-6 py-2 rounded-full bg-surface hover:bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps whitespace-nowrap transition-colors shadow-sm">DRINKS</button>
+</div>
+</div>
+<!-- Data Table -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-md overflow-hidden flex flex-col relative z-0">
+<!-- Table Header -->
+<div class="grid grid-cols-12 gap-4 px-6 py-4 bg-surface-container-low text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider items-center">
+<div class="col-span-1 text-center">Image</div>
+<div class="col-span-4">Item Name</div>
+<div class="col-span-2">Category</div>
+<div class="col-span-2 text-right">Price</div>
+<div class="col-span-2 text-center">Status</div>
+<div class="col-span-1 text-right">Actions</div>
+</div>
+<!-- Table Body -->
+<div class="flex flex-col">
+<!-- Row 1 -->
+<div class="grid grid-cols-12 gap-4 px-6 py-5 items-center hover:bg-surface-container-low/50 transition-colors group">
+<div class="col-span-1 flex justify-center">
+<img class="w-12 h-12 rounded-lg object-cover shadow-sm" data-alt="Close up food photography, rustic artisan bread with whipped burrata, cherry tomatoes, basil, drizzled with olive oil, served on dark stoneware plate, moody lighting, modern classic hospitality aesthetic, forest green and cream undertones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA36PB_-v26rPz1jkF5B9T4J_2sgtlVmQd0bDyR8zAHjaTC5Kgx5p38kig_e0Bnfei3D0C7q7KBCTjG5Qvndq60EkiIbWJBCuMbZwphxGPGGtiyuuE00lwUWn8OX3ESKvfL3ECCadh3XrMLJMIKHht67L_oVNN2K1dDs8CexJjc0iwjpm5xjz0xLDmiuNQK7mWHmyONNSs6SYmgN6oZB11bpVSXY_8-VrEMTDi7y8Etj-YI_CgbaedbHg"/>
+</div>
+<div class="col-span-4 flex flex-col min-w-0">
+<span class="font-headline-md text-[20px] leading-tight text-primary truncate">Whipped Burrata Crostini</span>
+<span class="font-body-md text-[14px] text-on-surface-variant truncate">Heirloom tomatoes, balsamic glaze, fresh basil</span>
+</div>
+<div class="col-span-2">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-caps text-[12px]">Starter</span>
+</div>
+<div class="col-span-2 text-right font-title-lg text-title-lg text-on-surface">
+            $16.00
+          </div>
+<div class="col-span-2 flex justify-center">
+<button aria-checked="true" class="relative inline-flex h-6 w-11 items-center rounded-full bg-primary transition-colors focus:outline-none" role="switch">
+<span class="translate-x-6 inline-block h-4 w-4 transform rounded-full bg-on-primary transition-transform"></span>
+</button>
+</div>
+<div class="col-span-1 flex justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="text-on-surface-variant hover:text-secondary p-1 rounded-md transition-colors"><span class="material-symbols-outlined text-[20px]">edit</span></button>
+<button class="text-on-surface-variant hover:text-error p-1 rounded-md transition-colors"><span class="material-symbols-outlined text-[20px]">delete</span></button>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="grid grid-cols-12 gap-4 px-6 py-5 items-center hover:bg-surface-container-low/50 transition-colors group bg-surface-container-lowest">
+<div class="col-span-1 flex justify-center">
+<img class="w-12 h-12 rounded-lg object-cover shadow-sm" data-alt="Overhead food photography, seared scallops on a bed of vivid green pea purée, garnished with microgreens and crispy pancetta, elegant white ceramic plate, soft natural studio lighting, high end culinary magazine style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi60zCZBDkGL5Y7LR1l89fdjvg7p1IJVFN5SuEkx3iTzyHIb1CLaVSXnvn99kbixRwfqp-ByDXAmrq_BnObnYJ7sG5uw6ZvOwGn3cK2KqqQldefvHfNtzWrlzb-Iq6ykv-3QTy9961ngJxfLONJnDO2mLADYfkYMjPJE0_d1PWJXoHfXhB5NNvCWp3cqi9Dv07cJxBaHnqDcm9jG2eXtnsAWbepHsxX26x52sdrjV4xeBbV1NNxRZYNg"/>
+</div>
+<div class="col-span-4 flex flex-col min-w-0">
+<span class="font-headline-md text-[20px] leading-tight text-primary truncate">Pan-Seared Scallops</span>
+<span class="font-body-md text-[14px] text-on-surface-variant truncate">Sweet pea purée, crispy pancetta, lemon butter</span>
+</div>
+<div class="col-span-2">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-caps text-[12px]">Main</span>
+</div>
+<div class="col-span-2 text-right font-title-lg text-title-lg text-on-surface">
+            $38.00
+          </div>
+<div class="col-span-2 flex justify-center">
+<button aria-checked="true" class="relative inline-flex h-6 w-11 items-center rounded-full bg-primary transition-colors focus:outline-none" role="switch">
+<span class="translate-x-6 inline-block h-4 w-4 transform rounded-full bg-on-primary transition-transform"></span>
+</button>
+</div>
+<div class="col-span-1 flex justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="text-on-surface-variant hover:text-secondary p-1 rounded-md transition-colors"><span class="material-symbols-outlined text-[20px]">edit</span></button>
+<button class="text-on-surface-variant hover:text-error p-1 rounded-md transition-colors"><span class="material-symbols-outlined text-[20px]">delete</span></button>
+</div>
+</div>
+<!-- Row 3 (Sold Out) -->
+<div class="grid grid-cols-12 gap-4 px-6 py-5 items-center hover:bg-surface-container-low/50 transition-colors group opacity-75">
+<div class="col-span-1 flex justify-center">
+<img class="w-12 h-12 rounded-lg object-cover shadow-sm grayscale-[30%]" data-alt="Close up food photography, rich dark chocolate fondant cake cut open with gooey center, dusted with cocoa powder, side of vanilla bean ice cream, dark slate background, warm dramatic lighting, luxurious feel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrcI-Mv6fVZ462Nv7FQ-BYUJCry5GSGQrP0YcxzLxWOVokdvtnr8Lu7Ey_QOeSDxORKxCynQinjzuO0j4An3Au6KOI0R7Pz_0DjUUVJbgUM54Z8ucrCWZTWiDSeq7NbzWLI9I2Kb6qEeshDWG0OcBU9ftD_4BvUOUbsqtsK_11O4jo2dFQ0-U6EBl_h4SO0pIAxF3B-Zs7tjJzShXceAph6XBt5fpx4ILiZvgY_LZomfIEm5BQ87tthA"/>
+</div>
+<div class="col-span-4 flex flex-col min-w-0">
+<span class="font-headline-md text-[20px] leading-tight text-on-surface-variant truncate">Valrhona Chocolate Fondant</span>
+<span class="font-body-md text-[14px] text-on-surface-variant truncate">Madagascar vanilla bean ice cream, raspberry coulis</span>
+</div>
+<div class="col-span-2">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-caps text-[12px]">Dessert</span>
+</div>
+<div class="col-span-2 text-right font-title-lg text-title-lg text-on-surface-variant">
+            $14.00
+          </div>
+<div class="col-span-2 flex justify-center flex-col items-center gap-1">
+<button aria-checked="false" class="relative inline-flex h-6 w-11 items-center rounded-full bg-surface-container-highest transition-colors focus:outline-none" role="switch">
+<span class="translate-x-1 inline-block h-4 w-4 transform rounded-full bg-outline transition-transform"></span>
+</button>
+<span class="font-label-caps text-[10px] text-error">SOLD OUT</span>
+</div>
+<div class="col-span-1 flex justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="text-on-surface-variant hover:text-secondary p-1 rounded-md transition-colors"><span class="material-symbols-outlined text-[20px]">edit</span></button>
+<button class="text-on-surface-variant hover:text-error p-1 rounded-md transition-colors"><span class="material-symbols-outlined text-[20px]">delete</span></button>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="px-6 py-4 bg-surface-container-low flex justify-between items-center">
+<span class="font-body-md text-body-md text-on-surface-variant">Showing 1 to 3 of 42 items</span>
+<div class="flex gap-2">
+<button class="p-2 rounded-lg bg-surface text-on-surface-variant hover:bg-surface-container-high transition-colors shadow-sm disabled:opacity-50"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="p-2 rounded-lg bg-surface text-on-surface-variant hover:bg-surface-container-high transition-colors shadow-sm"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+</div>
+</div>
+</div></main></body></html>

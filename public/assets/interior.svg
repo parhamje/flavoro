@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="lampGlow" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#ffd166" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#f77f00" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#01261f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#023027"/>
+      <stop offset="100%" stop-color="#011814"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#wallGrad)"/>
+  
+  <!-- Ambient Hanging Lanterns -->
+  <circle cx="160" cy="130" r="100" fill="url(#lampGlow)"/>
+  <circle cx="300" cy="100" r="120" fill="url(#lampGlow)"/>
+  <circle cx="440" cy="130" r="100" fill="url(#lampGlow)"/>
+
+  <!-- Lantern fixtures -->
+  <line x1="160" y1="0" x2="160" y2="120" stroke="#b08968" stroke-width="2"/>
+  <circle cx="160" cy="125" r="14" fill="#ffd166" stroke="#b08968" stroke-width="3"/>
+
+  <line x1="300" y1="0" x2="300" y2="90" stroke="#b08968" stroke-width="2"/>
+  <circle cx="300" cy="95" r="18" fill="#ffe49e" stroke="#b08968" stroke-width="3"/>
+
+  <line x1="440" y1="0" x2="440" y2="120" stroke="#b08968" stroke-width="2"/>
+  <circle cx="440" cy="125" r="14" fill="#ffd166" stroke="#b08968" stroke-width="3"/>
+
+  <!-- Dining Tables -->
+  <path d="M 60,340 L 260,340 L 280,450 L 40,450 Z" fill="#58311a" stroke="#331a0b" stroke-width="4"/>
+  <path d="M 340,340 L 540,340 L 560,450 L 320,450 Z" fill="#58311a" stroke="#331a0b" stroke-width="4"/>
+
+  <!-- Wine Glasses and Candles -->
+  <ellipse cx="160" cy="335" rx="16" ry="6" fill="#ffffff" opacity="0.4"/>
+  <circle cx="160" cy="325" r="5" fill="#ffb703"/>
+
+  <ellipse cx="440" cy="335" rx="16" ry="6" fill="#ffffff" opacity="0.4"/>
+  <circle cx="440" cy="325" r="5" fill="#ffb703"/>
+</svg>

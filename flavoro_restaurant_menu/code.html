@@ -1,0 +1,154 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed-variant":"#713700","on-primary-fixed-variant":"#2b4d44","on-background":"#1b1c1c","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","inverse-surface":"#303030","on-tertiary-fixed-variant":"#484742","on-tertiary-fixed":"#1c1c18","error-container":"#ffdad6","on-secondary-fixed":"#301400","secondary-container":"#fc8f34","surface-container-high":"#eae8e7","on-primary-fixed":"#00201a","tertiary-fixed-dim":"#c9c6c0","error":"#ba1a1a","surface-bright":"#fbf9f8","surface-container":"#f0eded","background":"#fbf9f8","secondary-fixed":"#ffdcc5","tertiary-fixed":"#e6e2db","outline-variant":"#c1c8c4","on-error":"#ffffff","on-secondary":"#ffffff","primary":"#01261f","on-error-container":"#93000a","on-primary":"#ffffff","surface-container-low":"#f6f3f2","inverse-on-surface":"#f3f0f0","primary-container":"#1a3c34","tertiary":"#21211d","surface-tint":"#43655c","on-surface-variant":"#414846","on-surface":"#1b1c1c","on-tertiary-container":"#a19f99","secondary":"#944a00","outline":"#717976","inverse-primary":"#aacec3","surface":"#fbf9f8","primary-fixed":"#c5eadf","surface-dim":"#dcd9d9","secondary-fixed-dim":"#ffb783","on-primary-container":"#83a69c","surface-container-highest":"#e4e2e1","primary-fixed-dim":"#aacec3","surface-variant":"#e4e2e1","on-secondary-container":"#663100","tertiary-container":"#373632"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"24px","unit":"8px","container-max":"1200px","section-gap":"80px","margin-mobile":"20px"},"fontFamily":{"body-lg":["Plus Jakarta Sans"],"headline-lg":["DM Serif Display"],"body-md":["Plus Jakarta Sans"],"display-lg-mobile":["DM Serif Display"],"headline-md":["DM Serif Display"],"display-lg":["DM Serif Display"],"title-lg":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"]},"fontSize":{"body-lg":["18px",{"lineHeight":"30px","fontWeight":"400"}],"headline-lg":["48px",{"lineHeight":"56px","fontWeight":"400"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-lg-mobile":["40px",{"lineHeight":"48px","fontWeight":"400"}],"headline-md":["32px",{"lineHeight":"40px","fontWeight":"400"}],"display-lg":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"400"}],"title-lg":["20px",{"lineHeight":"28px","fontWeight":"700"}],"label-caps":["14px",{"lineHeight":"20px","letterSpacing":"0.1em","fontWeight":"800"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1200px] mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[32px]">restaurant_menu</span><span class="font-headline-md text-headline-md text-primary tracking-tight">Flavoro</span></div><nav class="hidden lg:flex items-center gap-8" data-active-classes="text-secondary font-bold underline underline-offset-8 decoration-2"><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" data-path="home" href="#">HOME</a><a aria-current="page" class="transition-colors text-secondary font-bold underline underline-offset-8 decoration-2" data-path="menu" href="#">MENU</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" data-path="about-us" href="#">ABOUT US</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" data-path="gallery" href="#">GALLERY</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" data-path="contact" href="#">CONTACT</a></nav><div class="flex items-center gap-6"><a class="hidden sm:flex bg-secondary text-on-secondary px-6 py-2.5 rounded-full font-label-caps text-label-caps hover:bg-on-secondary-container transition-all items-center gap-2" data-path="booking" href="#">BOOK A TABLE <span class="material-symbols-outlined text-[18px]">calendar_today</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20"><div class="flex flex-col w-full">
+<!-- Menu Header Section -->
+<section class="relative w-full pt-16 pb-24 bg-surface text-center px-gutter">
+<h1 class="font-display-lg text-display-lg text-primary mb-4 tracking-tight">Our Menu</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-8">
+            A curated selection of our finest offerings, blending traditional techniques with organic, locally sourced ingredients.
+        </p>
+<div class="flex items-center justify-center gap-4 text-on-surface-variant font-label-caps text-label-caps">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span> (V) Vegetarian</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span> (GF) Gluten-Free</span>
+</div>
+</section>
+<!-- Menu Categories -->
+<div class="max-w-[1200px] mx-auto w-full px-gutter pb-section-gap space-y-section-gap">
+<!-- Starters -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start relative">
+<div class="md:col-span-5 h-[400px] md:h-[600px] rounded-xl overflow-hidden shadow-xl sticky top-28">
+<img alt="Starters Category Image" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="A close-up, high-end food photography shot of Truffle Burrata. Creamy burrata cheese sitting on a rustic ceramic plate, drizzled with olive oil and topped with shaved black truffles. Surrounded by toasted artisanal sourdough bread. Soft, moody lighting with deep forest green shadows and warm highlights, reflecting an epicurean heritage style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYiVK6IcMxCEnryomyT4OUrL3UdYO_Wd7PckjVp-UA3N04Bdcn9ZhrZnTcylmFg7Ey3m8cpMPjn8e7Z_4VQms_E5b-m1old0ZjGatZHLqx2ChlLgZ2gXvZMRtNhEUCTIE4Nwg-Q6i9PC7zApEObhpTgCI1ihfLtQoXaKPRRVpEDNy9Zmxx9bB6uJOEc1Uzmz2MWX-xBaTPmqk8cCzpZpO5u5s9amB5AtJI4mvjwD2O6nMo6CfJR3WZeA"/>
+</div>
+<div class="md:col-span-7 space-y-8 mt-8 md:mt-16">
+<div class="border-l-4 border-secondary pl-6 mb-12">
+<h2 class="font-headline-lg text-headline-lg text-primary">Starters</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">To awaken the palate.</p>
+</div>
+<div class="group flex flex-col gap-2 p-6 rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-baseline gap-4">
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-secondary transition-colors">Truffle Burrata <span class="text-secondary text-sm ml-2">(V) (GF)</span></h3>
+<div class="flex-grow border-b border-dotted border-outline-variant opacity-50 relative top-[-6px]"></div>
+<span class="font-title-lg text-title-lg text-primary">$22</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[85%]">Creamy organic burrata, shaved black truffle, aged balsamic reduction, wild arugula.</p>
+</div>
+<div class="group flex flex-col gap-2 p-6 rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-baseline gap-4">
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-secondary transition-colors">Crispy Calamari</h3>
+<div class="flex-grow border-b border-dotted border-outline-variant opacity-50 relative top-[-6px]"></div>
+<span class="font-title-lg text-title-lg text-primary">$18</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[85%]">Lightly dusted point judith calamari, preserved lemon aioli, fried capers.</p>
+</div>
+<div class="group flex flex-col gap-2 p-6 rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-baseline gap-4">
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-secondary transition-colors">Heirloom Tomato Bruschetta <span class="text-secondary text-sm ml-2">(V)</span></h3>
+<div class="flex-grow border-b border-dotted border-outline-variant opacity-50 relative top-[-6px]"></div>
+<span class="font-title-lg text-title-lg text-primary">$16</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[85%]">Charred sourdough, marinated heritage tomatoes, fresh basil, garlic confit.</p>
+</div>
+</div>
+</section>
+<!-- Signature Mains -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start relative">
+<div class="md:col-span-7 order-2 md:order-1 space-y-8 mt-8 md:mt-16">
+<div class="border-l-4 border-secondary pl-6 mb-12">
+<h2 class="font-headline-lg text-headline-lg text-primary">Signature Mains</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">The heart of our culinary narrative.</p>
+</div>
+<div class="group flex flex-col gap-2 p-6 rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-baseline gap-4">
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-secondary transition-colors">Pan-Seared Scallops <span class="text-secondary text-sm ml-2">(GF)</span></h3>
+<div class="flex-grow border-b border-dotted border-outline-variant opacity-50 relative top-[-6px]"></div>
+<span class="font-title-lg text-title-lg text-primary">$38</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[85%]">Dayboat scallops, sweet corn purée, crispy pancetta, micro cilantro oil.</p>
+</div>
+<div class="group flex flex-col gap-2 p-6 rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-baseline gap-4">
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-secondary transition-colors">Braised Short Rib <span class="text-secondary text-sm ml-2">(GF)</span></h3>
+<div class="flex-grow border-b border-dotted border-outline-variant opacity-50 relative top-[-6px]"></div>
+<span class="font-title-lg text-title-lg text-primary">$42</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[85%]">12-hour slow-braised beef short rib, creamy polenta, roasted root vegetables, red wine jus.</p>
+</div>
+<div class="group flex flex-col gap-2 p-6 rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-baseline gap-4">
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-secondary transition-colors">Herb-Crusted Salmon</h3>
+<div class="flex-grow border-b border-dotted border-outline-variant opacity-50 relative top-[-6px]"></div>
+<span class="font-title-lg text-title-lg text-primary">$34</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[85%]">Faroe Island salmon, quinoa tabbouleh, charred asparagus, lemon dill beurre blanc.</p>
+</div>
+</div>
+<div class="md:col-span-5 order-1 md:order-2 h-[400px] md:h-[600px] rounded-xl overflow-hidden shadow-xl sticky top-28">
+<img alt="Signature Mains Category Image" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="A top-down view of a beautifully plated Braised Short Rib. Dark, rich demi-glace pooling around the tender meat, resting on a bed of golden, creamy polenta. Garnished with delicate microgreens. Set on a dark slate table with subtle warm lighting illuminating the texture of the meat. High-end culinary magazine style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPJNn2AAcS5ZpC_ZvZkeyX8WRauNg9Mua-cpSYZchNLoQo8qf9tg-VQdxj2lG2Vj4Kh5AN4g8rVSSXuf735KxtsIdunwy6qGe36_HA7ORlTPVgGiVojild9qPhBKHqMrPjFYTGEimtl8UXQK01tgMOS5g44-EczlEI647fFh_yc5mcwrX5dFqniaM6jZySrab7l8SShx7-OttHZFyh32Gi0xBPAAnxNQ1CqoryepUSdGiH_hByBm5CeQ"/>
+</div>
+</section>
+<!-- Wood-Fired Pizzas -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start relative">
+<div class="md:col-span-5 h-[400px] md:h-[600px] rounded-xl overflow-hidden shadow-xl sticky top-28">
+<img alt="Wood-Fired Pizzas Category Image" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="A rustic wood-fired Margherita pizza straight from the oven. Blistered, charred crust with bubbly fresh mozzarella, bright red San Marzano tomato sauce, and vibrant green basil leaves. Dusted with flour on a wooden peel. Warm, inviting atmosphere, capturing the artisanal farm-to-table essence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSbSoD4NrWnjID3onAfEKDKOAOrryJbnVvvfkTIetVqGWImZN1F4NC70xpG8E4jVJUL4inRp1kvBcvT8OUl2NYcv1m7Gw_SKEy7uxvloF658mPbzO3yAZglmQy21xPOmA5PG5_l17DpkHqMdd93tpSqp2RFGnvwgqCKyzCoWJqrTSIDrya3LfdZvaiHLQPmV59e3VguTw2CgtRwp6MRyByWopbmPK6qKwHdWriLUzNef3F7Ty7Jo4oYw"/>
+</div>
+<div class="md:col-span-7 space-y-8 mt-8 md:mt-16">
+<div class="border-l-4 border-secondary pl-6 mb-12">
+<h2 class="font-headline-lg text-headline-lg text-primary">Wood-Fired Pizzas</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Artisanal dough, fired to perfection.</p>
+</div>
+<div class="group flex flex-col gap-2 p-6 rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-baseline gap-4">
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-secondary transition-colors">Margherita Classica <span class="text-secondary text-sm ml-2">(V)</span></h3>
+<div class="flex-grow border-b border-dotted border-outline-variant opacity-50 relative top-[-6px]"></div>
+<span class="font-title-lg text-title-lg text-primary">$20</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[85%]">San Marzano tomatoes, fresh mozzarella di bufala, basil, extra virgin olive oil.</p>
+</div>
+<div class="group flex flex-col gap-2 p-6 rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-baseline gap-4">
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-secondary transition-colors">Prosciutto e Rucola</h3>
+<div class="flex-grow border-b border-dotted border-outline-variant opacity-50 relative top-[-6px]"></div>
+<span class="font-title-lg text-title-lg text-primary">$24</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[85%]">Fior di latte, aged prosciutto di Parma, wild arugula, shaved parmesan, fig balsamic.</p>
+</div>
+</div>
+</section>
+<!-- Decadent Desserts -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start relative">
+<div class="md:col-span-7 order-2 md:order-1 space-y-8 mt-8 md:mt-16">
+<div class="border-l-4 border-secondary pl-6 mb-12">
+<h2 class="font-headline-lg text-headline-lg text-primary">Decadent Desserts</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">A sweet conclusion to your journey.</p>
+</div>
+<div class="group flex flex-col gap-2 p-6 rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-baseline gap-4">
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-secondary transition-colors">Chocolate Lava Cake <span class="text-secondary text-sm ml-2">(V)</span></h3>
+<div class="flex-grow border-b border-dotted border-outline-variant opacity-50 relative top-[-6px]"></div>
+<span class="font-title-lg text-title-lg text-primary">$14</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[85%]">Valrhona dark chocolate center, Madagascar vanilla bean gelato, raspberry coulis.</p>
+</div>
+<div class="group flex flex-col gap-2 p-6 rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-baseline gap-4">
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-secondary transition-colors">Classic Tiramisu <span class="text-secondary text-sm ml-2">(V)</span></h3>
+<div class="flex-grow border-b border-dotted border-outline-variant opacity-50 relative top-[-6px]"></div>
+<span class="font-title-lg text-title-lg text-primary">$12</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[85%]">Espresso-soaked ladyfingers, mascarpone cream, dark cocoa dusting.</p>
+</div>
+<div class="group flex flex-col gap-2 p-6 rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-baseline gap-4">
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-secondary transition-colors">Lemon Panna Cotta <span class="text-secondary text-sm ml-2">(GF)</span></h3>
+<div class="flex-grow border-b border-dotted border-outline-variant opacity-50 relative top-[-6px]"></div>
+<span class="font-title-lg text-title-lg text-primary">$11</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[85%]">Silky vanilla bean panna cotta, Amalfi lemon curd, pistachio crumble.</p>
+</div>
+</div>
+<div class="md:col-span-5 order-1 md:order-2 h-[400px] md:h-[600px] rounded-xl overflow-hidden shadow-xl sticky top-28">
+<img alt="Desserts Category Image" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="An elegant slice of Chocolate Lava Cake broken open with gooey dark chocolate flowing out. Accompanied by a perfectly round scoop of vanilla bean gelato. Served on an off-white ceramic plate with a swipe of bright red raspberry coulis. Soft, dramatic lighting emphasizing the rich textures and deep colors of the chocolate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEm6F30BQZJ8zSA9cu6BNk1rF9f5O6RCad-JYiMValyrR74O1fLLPS9UPI2vv7-QYGN7J5nNhEqJtpCSYSnPrrIqUXBRktFhjHke_NyJ8nhmdB9YOUkY9jVaBMzFzYCzVNO3ju0kmaT6meeEFu9WEXuGOh5QgInIH9fDZBb1PBRQ04ezJFquixQybc0VJVw4VH9LpcBuuS5U_xMTPe1j4jo5wEb_2m0effW9OldBBe4ROBmeCNC3RLQA"/>
+</div>
+</section>
+</div>
+</div></main><footer class="w-full bg-primary text-on-primary py-section-gap"><div class="max-w-[1200px] mx-auto px-gutter"><div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12"><div class="space-y-4"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-fixed-dim text-[24px]">restaurant_menu</span><span class="font-headline-md text-headline-md">Flavoro</span></div><p class="font-body-md text-on-primary-container max-w-xs">Crafting unforgettable epicurean experiences rooted in heritage and organic farm-to-table excellence.</p></div><div class="space-y-4"><h4 class="font-title-lg text-title-lg text-secondary-fixed-dim">Follow Our Story</h4><div class="flex gap-4"><a class="w-10 h-10 rounded-full border border-on-primary-container flex items-center justify-center hover:bg-secondary hover:border-secondary transition-all" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a><a class="w-10 h-10 rounded-full border border-on-primary-container flex items-center justify-center hover:bg-secondary hover:border-secondary transition-all" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a><a class="w-10 h-10 rounded-full border border-on-primary-container flex items-center justify-center hover:bg-secondary hover:border-secondary transition-all" href="#"><span class="material-symbols-outlined text-[20px]">share</span></a><a class="w-10 h-10 rounded-full border border-on-primary-container flex items-center justify-center hover:bg-secondary hover:border-secondary transition-all" href="#"><span class="material-symbols-outlined text-[20px]">push_pin</span></a></div></div><div class="space-y-4"><h4 class="font-title-lg text-title-lg text-secondary-fixed-dim">Visit Us</h4><p class="font-body-md text-on-primary-container">123 Gourmet Way<br/>Epicurean District, FL 34567</p></div></div><div class="pt-8 border-t border-on-primary-fixed-variant text-center"><p class="font-label-caps text-label-caps text-on-primary-container">© 2024 FLAVORO RESTAURANT. ALL RIGHTS RESERVED.</p></div></div></footer></body></html>

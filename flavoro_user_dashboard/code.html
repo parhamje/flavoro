@@ -1,0 +1,133 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed-variant":"#713700","on-primary-fixed-variant":"#2b4d44","on-background":"#1b1c1c","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","inverse-surface":"#303030","on-tertiary-fixed-variant":"#484742","on-tertiary-fixed":"#1c1c18","error-container":"#ffdad6","on-secondary-fixed":"#301400","secondary-container":"#fc8f34","surface-container-high":"#eae8e7","on-primary-fixed":"#00201a","tertiary-fixed-dim":"#c9c6c0","error":"#ba1a1a","surface-bright":"#fbf9f8","surface-container":"#f0eded","background":"#fbf9f8","secondary-fixed":"#ffdcc5","tertiary-fixed":"#e6e2db","outline-variant":"#c1c8c4","on-error":"#ffffff","on-secondary":"#ffffff","primary":"#01261f","on-error-container":"#93000a","on-primary":"#ffffff","surface-container-low":"#f6f3f2","inverse-on-surface":"#f3f0f0","primary-container":"#1a3c34","tertiary":"#21211d","surface-tint":"#43655c","on-surface-variant":"#414846","on-surface":"#1b1c1c","on-tertiary-container":"#a19f99","secondary":"#944a00","outline":"#717976","inverse-primary":"#aacec3","surface":"#fbf9f8","primary-fixed":"#c5eadf","surface-dim":"#dcd9d9","secondary-fixed-dim":"#ffb783","on-primary-container":"#83a69c","surface-container-highest":"#e4e2e1","primary-fixed-dim":"#aacec3","surface-variant":"#e4e2e1","on-secondary-container":"#663100","tertiary-container":"#373632"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"24px","unit":"8px","container-max":"1200px","section-gap":"80px","margin-mobile":"20px"},"fontFamily":{"body-lg":["Plus Jakarta Sans"],"headline-lg":["DM Serif Display"],"body-md":["Plus Jakarta Sans"],"display-lg-mobile":["DM Serif Display"],"headline-md":["DM Serif Display"],"display-lg":["DM Serif Display"],"title-lg":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"]},"fontSize":{"body-lg":["18px",{"lineHeight":"30px","fontWeight":"400"}],"headline-lg":["48px",{"lineHeight":"56px","fontWeight":"400"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-lg-mobile":["40px",{"lineHeight":"48px","fontWeight":"400"}],"headline-md":["32px",{"lineHeight":"40px","fontWeight":"400"}],"display-lg":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"400"}],"title-lg":["20px",{"lineHeight":"28px","fontWeight":"700"}],"label-caps":["14px",{"lineHeight":"20px","letterSpacing":"0.1em","fontWeight":"800"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-full mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[28px]">restaurant_menu</span><span class="font-headline-md text-[24px] text-primary tracking-tight">Flavoro</span></div><div class="flex items-center gap-4"><a class="font-label-caps text-[12px] text-on-surface-variant hover:text-secondary" data-path="home" href="#">BACK TO SITE</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 h-[calc(100vh-64px)] w-64 bg-surface-container-low border-r border-outline-variant z-40"><nav class="p-4 flex flex-col gap-2" data-active-classes="bg-primary-container text-on-primary-container font-bold"><a aria-current="page" class="flex items-center gap-3 px-4 py-3 rounded-lg transition-colors bg-primary-container text-on-primary-container font-bold" data-path="user-dashboard" href="#">OVERVIEW</a><a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-caps text-label-caps" data-path="my-reservations" href="#">MY RESERVATIONS</a><a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-caps text-label-caps" data-path="order-history" href="#">ORDER HISTORY</a><a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-caps text-label-caps" data-path="profile-settings" href="#">PROFILE SETTINGS</a></nav></aside><main class="pl-64 pt-16 w-full"><div class="flex flex-col w-full h-full p-section-gap gap-section-gap">
+<div class="flex flex-col gap-4">
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight">Welcome back, Alexander.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+      Here is an overview of your upcoming culinary experiences and recent activity.
+    </p>
+</div>
+<div class="grid grid-cols-12 gap-gutter">
+<div class="col-span-12 lg:col-span-8 flex flex-col gap-gutter">
+<div class="bg-surface-container rounded-xl p-8 relative overflow-hidden group shadow-sm transition-transform duration-500 hover:-translate-y-1">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center opacity-40 mix-blend-multiply transition-transform duration-[2s] group-hover:scale-105" data-alt="A moody, soft-focus close-up of a beautifully plated haute cuisine dish, featuring vibrant microgreens and a rich, dark reduction sauce on a textured ceramic plate. Warm, ambient lighting highlights the textures, reflecting the premium dining experience." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJ8qwrvVLu2kZjeqfseiL5Hb8OWj1OC0D7T6IP4zWpkYalKlKlsZpMFrRw71ZptA5qewVouN6nEdSz9Us-KlMzgxbueBBCkbgDnwPb39EsweZsL2EEhxpfzYpuHaNT_tqOHemg54HLv-JChPyBtnIFuroLerFFXt5SEquqcRWZPxWydmZalA2Tl6_hBKaKI5V5jK1gH56r8Dt_TMVKpB0cYYrFBS-PpbG48S026fczTzCJXWgsyq80mA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/80 to-transparent"></div>
+</div>
+<div class="relative z-10 flex flex-col h-full justify-between gap-8">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest">NEXT RESERVATION</span>
+<span class="material-symbols-outlined text-secondary">event_seat</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="font-headline-lg text-headline-lg text-primary">The Chef's Table</h2>
+<div class="flex flex-wrap items-center gap-6 mt-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">calendar_today</span>
+<span class="font-body-md text-body-md text-on-surface">Friday, Nov 24</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">schedule</span>
+<span class="font-body-md text-body-md text-on-surface">7:30 PM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">group</span>
+<span class="font-body-md text-body-md text-on-surface">Table for 2</span>
+</div>
+</div>
+</div>
+<div class="flex gap-4 mt-4">
+<button class="bg-secondary text-on-secondary font-label-caps text-label-caps px-6 py-3 rounded-full hover:bg-secondary-container transition-colors flex items-center gap-2 shadow-md">
+                    MANAGE RESERVATION
+                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="bg-surface-bright rounded-xl p-8 shadow-sm">
+<h3 class="font-headline-md text-headline-md text-primary mb-6 flex items-center justify-between">
+            Recent Orders
+            <a class="font-label-caps text-label-caps text-secondary hover:text-on-secondary-container transition-colors" href="#">VIEW ALL</a>
+</h3>
+<div class="flex flex-col gap-0">
+<div class="flex items-center justify-between py-4 group cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-lg overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Overhead shot of a beautifully arranged charcuterie board on dark slate, featuring artisanal cheeses, cured meats, and fresh figs. Soft natural lighting from the side." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2Q764ULsERif8Om0EEvhMH3swrms7A4dX1nWVuiNxaF0HzYBsaianCMbO7L-_FSKGECmoFfYV0N_NknY91XH7Icd1RmcOv-14AivAl4HemUtFew-VDcXiCJ4DYTVWZQgiaraMc8szf81ElfXNFdaeJdN9Pz-N4IzFbWrywKGR_HJ6crZXszLg0nIe92Km88g2m-wDVf3LblqPYZ6DWAnoqhYqqOI8pqa2LN39zZHsccxnnBT-Ti79fQ"/>
+</div>
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg text-on-surface group-hover:text-secondary transition-colors">Artisanal Tasting Menu</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Oct 12 • Pickup</span>
+</div>
+</div>
+<div class="text-right">
+<span class="block font-title-lg text-title-lg text-primary">$145.00</span>
+<span class="font-label-caps text-label-caps text-secondary flex items-center justify-end gap-1"><span class="material-symbols-outlined text-[14px]">check_circle</span> COMPLETED</span>
+</div>
+</div>
+<div class="h-[1px] w-full bg-outline-variant/30"></div>
+<div class="flex items-center justify-between py-4 group cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-lg overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A pair of elegant wine glasses filled with deep red wine, resting on a rustic wooden table alongside an open bottle. Warm, romantic lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBCdADgWvF_I3fDFoMiQ-PGw1GHZXCgUDQf30Adm5KiJ9QRmRPQL3-6NXrBMiayQKnu_rM3-w9e0nPMvgB_cIRC4lBssp41VGc42TW9_KrGFNW6_fD66qNkoUyfrM9GN_oRvkFepdPDNn92ZekcySAGYXwNQnaDu31mH4Jr4nFCLoUkjH8PAiTMjIxuwmiei1dWZyTHLwcKUu2499kySIaxZQHXR1y4E_heg0rkeFHJXSp3YEAt76NgQ"/>
+</div>
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg text-on-surface group-hover:text-secondary transition-colors">Sommelier's Selection Duo</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Sep 28 • Delivery</span>
+</div>
+</div>
+<div class="text-right">
+<span class="block font-title-lg text-title-lg text-primary">$85.00</span>
+<span class="font-label-caps text-label-caps text-secondary flex items-center justify-end gap-1"><span class="material-symbols-outlined text-[14px]">check_circle</span> COMPLETED</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-4 flex flex-col gap-gutter">
+<div class="bg-primary text-on-primary rounded-xl p-8 shadow-md relative overflow-hidden group">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-primary-container rounded-full blur-2xl opacity-50 group-hover:opacity-70 transition-opacity"></div>
+<div class="relative z-10 flex flex-col gap-6">
+<h3 class="font-headline-md text-headline-md">Flavoro Rewards</h3>
+<div class="flex items-end gap-2">
+<span class="font-display-lg text-display-lg leading-none">2,450</span>
+<span class="font-label-caps text-label-caps text-primary-fixed pb-2">PTS</span>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between font-label-caps text-label-caps text-primary-fixed">
+<span>GOLD TIER</span>
+<span>550 TO PLATINUM</span>
+</div>
+<div class="w-full h-2 bg-primary-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[80%] rounded-full relative">
+<div class="absolute right-0 top-0 bottom-0 w-4 bg-white/20 blur-[2px] animate-pulse"></div>
+</div>
+</div>
+</div>
+<button class="bg-transparent border border-primary-fixed text-primary-fixed font-label-caps text-label-caps px-4 py-2 rounded-full hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors mt-2 text-center">
+                    REDEEM POINTS
+                </button>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-8 shadow-sm">
+<h3 class="font-title-lg text-title-lg text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">star</span>
+                Favorites
+            </h3>
+<div class="flex flex-col gap-4">
+<div class="group cursor-pointer relative overflow-hidden rounded-lg h-32 w-full">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A pristine white plate holding a beautifully seared scallop topped with caviar, resting on a bed of vivid green pea puree. Soft, directional light enhancing textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQqIQWSs6f0MiTqEaYtGipvrvqKzM2JBn-cKtZjPxWx_qzBECpyP9O9HeXeAOO38SDG99kvaA-9-oPx-RernpbP8Y0aPWt1OF4dPKkwf6tEVT0xKur0Cwvlkc_dk-EmTMPIHWLInYf7tQ3shXsvEnIobddRdZSP2gyoYKncdmnXqCsqZClossx3f-7_FkX7WM1g29GvYFU40dvfZ5u3L7PWNGCQFQEhMqZNMvPNSThD1RoqIZ64S-Wdg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<span class="font-title-lg text-title-lg text-white block truncate">Seared Scallops</span>
+<span class="font-body-md text-body-md text-surface-dim">Ordered 4 times</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-4 py-3 font-label-caps text-label-caps text-secondary text-center hover:bg-surface-container-high rounded-lg transition-colors">
+                VIEW ALL FAVORITES
+            </button>
+</div>
+</div>
+</div>
+</div></main></body></html>

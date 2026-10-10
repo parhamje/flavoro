@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgB" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#1f2d24"/>
+      <stop offset="100%" stop-color="#0a120c"/>
+    </radialGradient>
+    <radialGradient id="plateB" cx="45%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#2d332e"/>
+      <stop offset="85%" stop-color="#191c1a"/>
+      <stop offset="100%" stop-color="#0d0e0d"/>
+    </radialGradient>
+    <radialGradient id="cheese" cx="40%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#f4eedb"/>
+      <stop offset="100%" stop-color="#ded3b8"/>
+    </radialGradient>
+    <filter id="shadowBu" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="600" height="450" fill="url(#bgB)"/>
+  <circle cx="300" cy="225" r="185" fill="url(#plateB)" filter="url(#shadowBu)"/>
+  
+  <!-- Sourdough Toast Slice -->
+  <polygon points="180,240 260,160 310,190 230,270" fill="#c99355" stroke="#7a4f21" stroke-width="4" filter="url(#shadowBu)"/>
+
+  <!-- Burrata Ball -->
+  <circle cx="320" cy="225" r="70" fill="url(#cheese)" filter="url(#shadowBu)"/>
+  <path d="M 305,160 C 315,145 335,145 340,165 C 330,175 315,170 305,160 Z" fill="#e8dfc5"/>
+
+  <!-- Heirloom Cherry Tomatoes -->
+  <g filter="url(#shadowBu)">
+    <circle cx="260" cy="260" r="18" fill="#d90429"/>
+    <circle cx="390" cy="240" r="16" fill="#e85d04"/>
+    <circle cx="370" cy="170" r="15" fill="#d90429"/>
+    <circle cx="270" cy="180" r="14" fill="#ffb703"/>
+  </g>
+
+  <!-- Balsamic Glaze Drizzle & Basil -->
+  <path d="M 250,210 Q 320,180 380,220 Q 340,260 270,240" fill="none" stroke="#240046" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#2d6a4f">
+    <ellipse cx="310" cy="190" rx="14" ry="8" transform="rotate(-30 310 190)"/>
+    <ellipse cx="340" cy="250" rx="16" ry="9" transform="rotate(20 340 250)"/>
+  </g>
+</svg>

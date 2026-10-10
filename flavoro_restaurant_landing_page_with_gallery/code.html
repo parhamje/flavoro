@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Flavoro Restaurant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Poppins:wght@300;400;500;600&amp;family=Great+Vibes&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1a3c34', // Forest Green
+            accent: '#e67e22',  // Orange
+            background: '#fdfbf7', // Off-white/Cream
+            surface: '#ffffff',
+            textMain: '#2d3748',
+            textMuted: '#718096',
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'serif'],
+            body: ['Poppins', 'sans-serif'],
+            script: ['Great Vibes', 'cursive'],
+          },
+          borderRadius: {
+            'xl': '1rem',
+            '2xl': '1.5rem',
+            '3xl': '2rem',
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-utilities">.leaf-bg-top {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuCqDvq7TQEGFEjRen8H5RpsrtV9PG1IixgrxSprXVsF9RnWRCLn4Fj3P5uQAeTuoaxwrRSEcytwudpJ8vZ29GlaH3f8meJFCVVFcHhf3xZQJisGCljL82gWOVS9KXchxEQ_1GQ1onwtLi5hfSLmPvKbqL1kyNFTDAPT7vFQLWa_CnbhkqJTXdIOzHH__tRUZnrho3xqcepzulUZ48BCn-pDPJW9TVbTax-u0uCWGFFPqCyJfLb_r9YX_w);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 300px
+    }
+.leaf-bg-bottom {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuCR9jXGLzfeqsl66A8khGxLIZGHzeK8c8jVvwKEjWtNcO0DSaI3lxaZYePfZ2QIyNAPijYZlyp5GdVXYCvuiojavq0Bn6tFHko8nMNBzVxZCnqvviHYFGFPVJXXzyA2ibKherRUJ9EF18ydzddLTrYWM62309Zkqt9kQra-FvQ1NYST2m5jcIDr71DS9HUHpiFErM00Ew-uxNECNXgS0iyjc7Ran5jlb7fQZmGgHNL5_tgU15IWDVBxlA);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 200px
+    }
+.text-shadow-sm {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1)
+    }</style>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="font-body bg-background text-textMain antialiased relative overflow-x-hidden">
+<!-- Background decorative elements -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-[url('https://placehold.co/400x600/transparent/8fbc8f?text=Leaves')] bg-no-repeat bg-right-top bg-contain opacity-40 pointer-events-none -z-10"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-[url('https://placehold.co/300x500/transparent/8fbc8f?text=Leaves')] bg-no-repeat bg-left-bottom bg-contain opacity-40 pointer-events-none -z-10"></div>
+<!-- BEGIN: Navigation -->
+<nav class="container mx-auto px-6 py-6 flex justify-between items-center relative z-10">
+<div class="flex items-center gap-2">
+<!-- Logo placeholder -->
+<div class="text-accent text-3xl">
+<i class="fa-solid fa-hat-chef"></i>
+</div>
+<div>
+<h1 class="font-script text-4xl text-primary leading-none">Flavoro</h1>
+<p class="text-[10px] tracking-widest text-accent font-semibold uppercase">Restaurant</p>
+</div>
+</div>
+<div class="hidden md:flex space-x-8 items-center font-medium text-sm text-textMain">
+<a class="text-accent border-b-2 border-accent pb-1" href="#">HOME</a>
+<a class="hover:text-accent transition-colors" href="#">MENU</a>
+<a class="hover:text-accent transition-colors" href="#">ABOUT US</a>
+<a class="hover:text-accent transition-colors" href="#">GALLERY</a>
+<a class="hover:text-accent transition-colors" href="#">CONTACT</a>
+</div>
+<button class="bg-accent hover:bg-orange-600 text-white px-6 py-3 rounded-full font-medium transition-colors text-sm shadow-md">
+      BOOK A TABLE
+    </button>
+</nav>
+<!-- END: Navigation -->
+<!-- BEGIN: Hero Section -->
+<section class="container mx-auto px-6 pt-12 pb-24 relative z-10 flex flex-col lg:flex-row items-center gap-12">
+<!-- Hero Content -->
+<div class="lg:w-1/2 space-y-8">
+<div class="flex items-center gap-4 text-sm font-semibold tracking-wider text-primary">
+<span>GOOD FOOD</span>
+<span class="w-1 h-4 bg-accent"></span>
+<span>GOOD MOOD</span>
+</div>
+<h2 class="font-heading text-5xl md:text-6xl lg:text-7xl font-bold text-primary leading-tight">
+        Delicious Food <br/>
+<span class="text-accent font-heading italic">Made With Love</span>
+</h2>
+<div class="flex items-center gap-4 text-accent">
+<div class="h-px bg-primary flex-grow max-w-[40px]"></div>
+<i class="fa-solid fa-heart text-sm"></i>
+<div class="h-px bg-primary flex-grow max-w-[40px]"></div>
+</div>
+<p class="text-textMuted text-lg max-w-md">
+        Experience the perfect blend of taste, quality &amp; passion in every bite.
+      </p>
+<div class="flex flex-wrap gap-4 pt-2">
+<button class="bg-accent hover:bg-orange-600 text-white px-8 py-4 rounded-full font-medium transition-colors shadow-lg flex items-center gap-2">
+          EXPLORE MENU <i class="fa-solid fa-arrow-right"></i>
+</button>
+<button class="bg-white border border-gray-300 hover:border-primary text-primary px-8 py-4 rounded-full font-medium transition-colors shadow-sm flex items-center gap-2">
+          RESERVE NOW <i class="fa-regular fa-calendar-days"></i>
+</button>
+</div>
+<div class="flex items-center gap-4 pt-6">
+<div class="flex -space-x-3">
+<img alt="User 1" class="w-10 h-10 rounded-full border-2 border-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD---aP7JrgB_b1ZQTieduhCK4Gd9aLsxggOQ9KWOSFwuEm6MlwFtHUD4iouT3DCkCivHvf_m0BuZlBAg66E-poZ7gilB8ymmQOsYJrprY-J9tOlPwvgEgptXLvPwSj_x7iSgSxQSq60WIVUs3xstz09tbKge4lJRPLcQWPx5cIIqAijWm1jnEb03WH2fkonDRdcD-e-3V8kKcRDh9XsHeDgMUjMRhpwoapQso9E9yzlytP07-rije79g"/>
+<img alt="User 2" class="w-10 h-10 rounded-full border-2 border-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1YOelUbQXlBfBmYoeMv9gQFnZ2Zj2-m5sZKiEh78Ui1jlwusz_ExFoCJuIz6wjAJLmj96_eM7oefAwDde8cDnQRlphNuAgklDjyNS305GD4gI7Ww_PzXk41n2gjja_8USX2S1nG8kvZYc9r6mY3n0aNTE3lGoZhcYn0kBOwpcdWLlFZx19EXd20h4fJTFKvnbHQORSblE_hF9unosdFv1EGaNbxo9PPApX7h7MO78ivUN9MfI0jigUg"/>
+<img alt="User 3" class="w-10 h-10 rounded-full border-2 border-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOf_4QRrFI-mfizX9teRxd_0GfpvxW04WzvmzkV2QiVAR6fvu5dRUaVEoaien3VOygskvUaz-_KZLfxIBcGTD7-gl4Ui6IAVwxJxIWCmQ3PDY-gTK-F8wrsO0jQO0lxd3ytc7pqOV6GA6kUbqg7U4S-Qb4458D1HjjH2kKaFHzPXDU7Ll6KLcE7PxghIuOOc_sbQ6S947pkptP0vzX2xIZOTfk72avIvrnSgUpDBC6ZvCw0NY664CS3g"/>
+</div>
+<div>
+<div class="flex items-center gap-1 font-bold text-lg">
+            4.9/5 <i class="fa-solid fa-star text-accent text-sm"></i>
+</div>
+<p class="text-xs text-textMuted">From 1,200+ Happy Customers</p>
+</div>
+</div>
+</div>
+<!-- Hero Image -->
+<div class="lg:w-1/2 relative">
+<!-- Decorative background circle -->
+<div class="absolute inset-0 bg-primary/5 rounded-full filter blur-3xl transform scale-110"></div>
+<img alt="Grilled Chicken Salad" class="relative z-10 w-full h-auto drop-shadow-2xl rounded-full object-cover aspect-square max-w-[600px] mx-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR0kQVUO1XadT6DWy6qjNYrg35sOWXbUnufUlACSrJILTHnLlHbXS2XiDosQTlnJ9oY6MM-GmawS3Y4Eq4X8kV5GeXm0-kWQ_Aq1cIY9G6Jq_C4eiVcCLpvNT0KCpI4evAABkpdnw54EvDpIIFFvJGbBjeUS1vlov-pJiZ9d-xyKlVmEiUgysvwLkhM2qvkJy1trYueK77in91dTKKQv8GIpUBTSc7ngAgaAU7kWSgU6ZkIiTf5nXHiQ"/>
+<!-- Small decorative elements around image -->
+<img alt="Mint" class="absolute top-10 left-10 w-16 h-16 z-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKoAYIYnoiYaXuviB7TBAQLr22TM-Oq8XwuTGmJRSOgFoAj45t7TNxVMtSDw8r9tbYHrALNohSmm5NWUHoxh7x7kUY5IJUJTUs9xl-hj7iN7NRBrhIhonmL4S9Ixd96ow-Irq7Mf5C6qM1xpnnIqrntfNzIBdsYcqI35cowxkv3MnTweKEUwLsafmVhmOaB-i-1pz0BX0xRtum-hDCRb4QdoBKhv7eRbjBBOKkhS1qQuXyfB5V2xx1aA"/>
+<img alt="Tomato" class="absolute bottom-20 right-10 w-20 h-20 z-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2SL6Y6i4xBM6Uy9jE5BiwYKa5QjAkdqBuITZbce39220kzUhyS0bHUx9r91ft3R9-c0tiKoTEo0g_yTvmrQvfnENFLxZcdq4I41APjyFeWCIDChMJbZrKhDx0pFDqjshfZgU_0XgZgVxCOWVX8nqHbnRi-hwE8iG3dNyvQLQN7bgytUlqA6yfqdH6ZPgprfhWLzWJVJJXd1ZIK-Id7ZwXLfqqnY29p0-1Hb5hs7RajjiDcNSucIytIw"/>
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: Features Section -->
+<section class="container mx-auto px-6 mb-24 relative z-20">
+<div class="bg-primary text-white rounded-[2.5rem] p-8 md:p-12 shadow-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-8 md:gap-4 divide-y md:divide-y-0 md:divide-x divide-white/20">
+<!-- Feature 1 -->
+<div class="flex-1 px-4 text-center space-y-4 pt-4 md:pt-0">
+<div class="w-16 h-16 mx-auto rounded-full border border-white/30 flex items-center justify-center text-accent text-2xl mb-4">
+<i class="fa-solid fa-leaf"></i>
+</div>
+<h3 class="font-heading text-lg font-bold tracking-wide">FRESH INGREDIENTS</h3>
+<p class="text-sm text-white/80 font-light leading-relaxed">
+          We use only the freshest and highest quality ingredients.
+        </p>
+</div>
+<!-- Feature 2 -->
+<div class="flex-1 px-4 text-center space-y-4 pt-8 md:pt-0">
+<div class="w-16 h-16 mx-auto rounded-full border border-white/30 flex items-center justify-center text-accent text-2xl mb-4">
+<i class="fa-solid fa-hat-chef"></i>
+</div>
+<h3 class="font-heading text-lg font-bold tracking-wide">EXPERT CHEFS</h3>
+<p class="text-sm text-white/80 font-light leading-relaxed">
+          Our chefs craft every dish with passion and creativity.
+        </p>
+</div>
+<!-- Feature 3 -->
+<div class="flex-1 px-4 text-center space-y-4 pt-8 md:pt-0">
+<div class="w-16 h-16 mx-auto rounded-full border border-white/30 flex items-center justify-center text-accent text-2xl mb-4">
+<i class="fa-solid fa-bell-concierge"></i>
+</div>
+<h3 class="font-heading text-lg font-bold tracking-wide">QUALITY SERVICE</h3>
+<p class="text-sm text-white/80 font-light leading-relaxed">
+          Enjoy fast, friendly &amp; professional service every time.
+        </p>
+</div>
+<!-- Feature 4 -->
+<div class="flex-1 px-4 text-center space-y-4 pt-8 md:pt-0">
+<div class="w-16 h-16 mx-auto rounded-full border border-white/30 flex items-center justify-center text-accent text-2xl mb-4">
+<i class="fa-regular fa-heart"></i>
+</div>
+<h3 class="font-heading text-lg font-bold tracking-wide">MADE WITH LOVE</h3>
+<p class="text-sm text-white/80 font-light leading-relaxed">
+          Every dish is prepared with love to delight your taste buds.
+        </p>
+</div>
+</div>
+</section>
+<!-- END: Features Section -->
+<!-- BEGIN: Chef's Specials -->
+<section class="container mx-auto px-6 py-16">
+<div class="text-center mb-12">
+<div class="flex items-center justify-center gap-4 text-accent text-sm font-semibold tracking-widest mb-4">
+<img alt="dec" class="w-6 opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBq9TyQnd-N3is_5WYJi631rugkcfWYB5l3nIOBG8FFG1tnAuGbwfN2p6lIKTlIwfQ6oc_flMmQNwj59MQdSmE6mGl9SWqDeHDwTHc-D-ckII5RBwqzYvpjfaGCHygHSbR3gE20FFt74Ku1ZAMOBaFoRk9EJ9p8SxywXBI-YhP2TKQHR12zvx8RH6Obw_QTEwCLYCDOiy6KJ97U9ePbC1I8GR9d8EGJ5sxMWUxUgqxkebjxu-i6XfStcg"/>
+<span>POPULAR DISHES</span>
+<img alt="dec" class="w-6 opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFytrx1CYPOZcpx0jr2jM16pOArJc0ybO6MXMmCFjGt1P8sBsmeGqHurT01_RxcdxASLxviLtyacA0U-pbnmWFHVGoiKE5AHYx-b6BvXYWfwJR0jktfS27AE0Ma4175Ir7L05-Yx53WCbwfRQ-l85BjI2IeiWqrYYnAy8tuv_s_TV-VThUO8oLuqE1PmIX_6TIVJYlXINkZ4xbBuYtil9lMNktCHbD15gO_Ys0oowcDy-bV_txnLKNDQ"/>
+</div>
+<h2 class="font-heading text-4xl md:text-5xl font-bold text-primary mb-4">Our Chef's Specials</h2>
+<div class="flex items-center justify-center gap-2 text-accent">
+<div class="w-16 h-px bg-accent/50"></div>
+<i class="fa-solid fa-scissors transform -rotate-45"></i>
+<div class="w-16 h-px bg-accent/50"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Dish 1 -->
+<div class="bg-white rounded-2xl p-4 shadow-sm hover:shadow-xl transition-shadow border border-gray-100 relative group">
+<button class="absolute top-6 right-6 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-accent shadow-sm z-10">
+<i class="fa-regular fa-heart"></i>
+</button>
+<div class="rounded-xl overflow-hidden mb-4 aspect-[4/3]">
+<img alt="Creamy Mushroom Pasta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLcGqnjCisBj_Yzkd_3UTfaYVnSmx3ANM1kk8X_Xo7p25r-Squrc892F7ziJbgw603gz8hoJweP0cBk1XpbI8EPFt_EimksekO4jDlNhIATpSwkjzVvrUB6icHQMebx-hbXzE3ujoWLFBr0gAEdNg_LO-ww8bSqbjKEzgwm4_Mf2zuRa3n0Vb4A_1sBrF-4go3nZoNYPkaHucOFCzlwL9h3mfZnK_L_SmezsHq2DxHeQBEDwDKSDsvVA"/>
+</div>
+<h4 class="font-heading font-bold text-lg text-primary mb-2">Creamy Mushroom Pasta</h4>
+<div class="flex items-center gap-1 text-accent text-xs mb-3">
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+<span class="text-textMuted ml-1">(128)</span>
+</div>
+<div class="text-accent font-bold text-xl">$12.99</div>
+</div>
+<!-- Dish 2 -->
+<div class="bg-white rounded-2xl p-4 shadow-sm hover:shadow-xl transition-shadow border border-gray-100 relative group">
+<button class="absolute top-6 right-6 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-accent shadow-sm z-10">
+<i class="fa-regular fa-heart"></i>
+</button>
+<div class="rounded-xl overflow-hidden mb-4 aspect-[4/3]">
+<img alt="Grilled Salmon" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYITDPkgAE27RWJKfM9NpBbwWVWFTHAkNTs6aWi5Z2Lfaif8o8nv5g-w9pmoGqgZWl8j0JgPCMTrgVUVGX4aYb7Wb3pcOSScTiPCTEzfzujQKavT2ORk6lnts6wKZw64_vjAKpla3dt5-kqPZ5nF66Q7GiCikkBSw_4wfuc7DX2-VM5Lf4Q3uw-4iGw42uCRtJK5jTukMSWOpcrk2FpyC2ryHuigV4kMWiqFwwhTQo1ZD4IwEXaKGU7g"/>
+</div>
+<h4 class="font-heading font-bold text-lg text-primary mb-2">Grilled Salmon</h4>
+<div class="flex items-center gap-1 text-accent text-xs mb-3">
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+<span class="text-textMuted ml-1">(96)</span>
+</div>
+<div class="text-accent font-bold text-xl">$18.99</div>
+</div>
+<!-- Dish 3 -->
+<div class="bg-white rounded-2xl p-4 shadow-sm hover:shadow-xl transition-shadow border border-gray-100 relative group">
+<button class="absolute top-6 right-6 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-accent shadow-sm z-10">
+<i class="fa-regular fa-heart"></i>
+</button>
+<div class="rounded-xl overflow-hidden mb-4 aspect-[4/3]">
+<img alt="Classic Beef Burger" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwZMQEAqF2MqxbVIXYTA5fNQ9KShZnHlFw2bDtJMoQ1b6tw14PwMcxOICdVWz-O4FcjWm33mSTfyAQVDZe9q3wBjxRoe79sDFLY6WxlUbRoEapwli1FvARC-jsNcQhMR0-Pfjw26mepf9Upp4Z8OcWHZKLklb1MtQI7zV_dOcCAAuBuAQHoQVQQ8jBfglolFIz7fVf390Sf36EriWcwTzGT0mDf_Q-xaVAfHKsFwv4I10AbORfhyr4ng"/>
+</div>
+<h4 class="font-heading font-bold text-lg text-primary mb-2">Classic Beef Burger</h4>
+<div class="flex items-center gap-1 text-accent text-xs mb-3">
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+<span class="text-textMuted ml-1">(110)</span>
+</div>
+<div class="text-accent font-bold text-xl">$11.99</div>
+</div>
+<!-- Dish 4 -->
+<div class="bg-white rounded-2xl p-4 shadow-sm hover:shadow-xl transition-shadow border border-gray-100 relative group">
+<button class="absolute top-6 right-6 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-accent shadow-sm z-10">
+<i class="fa-regular fa-heart"></i>
+</button>
+<div class="rounded-xl overflow-hidden mb-4 aspect-[4/3]">
+<img alt="Chocolate Lava Cake" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSGOQXjKHP_95NcCax1H23KQB55YVAK6WKCIF_k0rx-RH0SbTpwXfuqP6Bnz_Frnxb3Vi_sT0ebr36O3iEz1rY_ytoOH3v44unA1fFklsUB0FMZXhSHDMaawY4odtpIhGSJDiqIMRjDlkITUv0f9q3b6lmmrDcopyZ-ghFspFf5M4URLT2_dPmNEI_6MrUX84BV5wO8BJEPqdhx38BfGDa6Y2Ki-K4R9qY8jcpSo2UYZrdmm84WTMkjw"/>
+</div>
+<h4 class="font-heading font-bold text-lg text-primary mb-2">Chocolate Lava Cake</h4>
+<div class="flex items-center gap-1 text-accent text-xs mb-3">
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+<span class="text-textMuted ml-1">(85)</span>
+</div>
+<div class="text-accent font-bold text-xl">$7.99</div>
+</div>
+</div>
+</section>
+<!-- END: Chef's Specials -->
+<!-- BEGIN: About Us Section -->
+<section class="container mx-auto px-6 py-16">
+<div class="bg-primary text-white rounded-[2.5rem] overflow-hidden flex flex-col lg:flex-row relative">
+<!-- Video/Image container -->
+<div class="lg:w-[45%] relative aspect-video lg:aspect-auto min-h-[300px]">
+<img alt="Restaurant Interior" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSPzawS-znrhvY003J0HcJSwGFY2byRVm3H_Vdz8hz9X5qA8ugfU4RyWY75JHkTmsWCTjITa9-IuVSPK4AGt28z0ylCIz_U2YaAqk3E8qtljYzJRtX1pZP-xO1oARau42R2aCb9c_gvTD71UHNSPCJAON8M5G9HFjfh6_enF12pYHDGzuLUtFU-K1S7EcIUQPUEC5fNge_40dXmV04KeHtJZLhkOmEE9TVLBFvgSaiBwcTa9tTuv19wA"/>
+<!-- Play Button Overlay -->
+<div class="absolute inset-0 flex items-center justify-center bg-black/20">
+<button class="w-16 h-16 rounded-full border-2 border-white flex items-center justify-center text-white hover:bg-white hover:text-primary transition-colors">
+<i class="fa-solid fa-play ml-1"></i>
+</button>
+</div>
+</div>
+<!-- Content -->
+<div class="lg:w-[55%] p-10 md:p-16 flex flex-col justify-center relative">
+<!-- Decorative bg pattern -->
+<div class="absolute inset-0 bg-[url('https://placehold.co/400x400/1a3c34/23473f?text=Pattern')] opacity-20 pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row gap-12">
+<div class="flex-1 space-y-6">
+<div class="flex items-center gap-4 text-accent text-sm font-semibold tracking-widest">
+<span>ABOUT US</span>
+<img alt="dec" class="w-6 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_UMwxSD5i4Rd7eQ2lFopoumODE9ijonAAGLM1kVRKz6sG2IBENiLV1HuHDrA_v69_KxYcLpX8O5pfSTxyGucZP6tbVyqU7EttdhQXsTTLl9LhPhPdOWybCOzUW901CYLsIwzWk_swvNC_sFAacloyd7lRKTv36x167TzZkNI0pj3Pb1uklf3Zso8r98EXNSc2n3gMQdypIpVcAb6IvJRTaJU1RbssXYwpT9oTsGItUYM9Vod8vrCh7A"/>
+</div>
+<h2 class="font-heading text-3xl md:text-4xl font-bold leading-tight">
+              A Place Where <br/>
+              Good Food &amp; Good Times <br/>
+              Come Together
+            </h2>
+<p class="text-white/80 font-light text-sm leading-relaxed">
+              At Flavoro, we believe that great food brings people together. From our cozy ambiance to our delicious dishes, we're here to make your moments unforgettable.
+            </p>
+<div class="font-script text-4xl text-accent pt-2">
+              Taste. Love. Repeat.
+            </div>
+</div>
+<!-- Stats -->
+<div class="w-full md:w-48 space-y-8 flex flex-col justify-center border-t md:border-t-0 md:border-l border-white/20 pt-8 md:pt-0 md:pl-8">
+<div class="flex items-center gap-4">
+<div class="text-accent text-3xl w-10 text-center"><i class="fa-solid fa-hat-chef"></i></div>
+<div>
+<div class="font-bold text-xl">10+</div>
+<div class="text-xs text-white/70">Years of<br/>Experience</div>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="text-accent text-3xl w-10 text-center"><i class="fa-solid fa-bowl-food"></i></div>
+<div>
+<div class="font-bold text-xl">50+</div>
+<div class="text-xs text-white/70">Delicious<br/>Dishes</div>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="text-accent text-3xl w-10 text-center"><i class="fa-solid fa-award"></i></div>
+<div>
+<div class="font-bold text-xl">100%</div>
+<div class="text-xs text-white/70">Customer<br/>Satisfaction</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: About Us Section -->
+<!-- BEGIN: Info Bar Section -->
+<section class="container mx-auto px-6 py-8">
+<div class="bg-white rounded-[2rem] p-8 shadow-sm border border-gray-100 flex flex-wrap justify-between items-center gap-6 lg:gap-4 divide-y lg:divide-y-0 lg:divide-x divide-gray-200">
+<div class="flex items-center gap-4 flex-1 min-w-[200px] pt-4 lg:pt-0 lg:px-4 first:pt-0 first:lg:pl-0">
+<div class="w-12 h-12 rounded-full bg-orange-50 text-accent flex items-center justify-center text-xl">
+<i class="fa-solid fa-motorcycle"></i>
+</div>
+<div>
+<h4 class="font-bold text-sm text-primary">FREE DELIVERY</h4>
+<p class="text-xs text-textMuted">On order over $30</p>
+</div>
+</div>
+<div class="flex items-center gap-4 flex-1 min-w-[200px] pt-4 lg:pt-0 lg:px-4">
+<div class="w-12 h-12 rounded-full bg-orange-50 text-accent flex items-center justify-center text-xl">
+<i class="fa-regular fa-clock"></i>
+</div>
+<div>
+<h4 class="font-bold text-sm text-primary">OPENING HOURS</h4>
+<p class="text-xs text-textMuted">Mon - Sun<br/>10:00 AM - 11:00 PM</p>
+</div>
+</div>
+<div class="flex items-center gap-4 flex-1 min-w-[200px] pt-4 lg:pt-0 lg:px-4">
+<div class="w-12 h-12 rounded-full bg-orange-50 text-accent flex items-center justify-center text-xl">
+<i class="fa-solid fa-location-dot"></i>
+</div>
+<div>
+<h4 class="font-bold text-sm text-primary">LOCATION</h4>
+<p class="text-xs text-textMuted">123 Food Street,<br/>Yummy City, FC 12345</p>
+</div>
+</div>
+<div class="flex items-center gap-4 flex-1 min-w-[200px] pt-4 lg:pt-0 lg:px-4">
+<div class="w-12 h-12 rounded-full bg-orange-50 text-accent flex items-center justify-center text-xl">
+<i class="fa-solid fa-phone-volume"></i>
+</div>
+<div>
+<h4 class="font-bold text-sm text-primary">CALL US</h4>
+<p class="text-xs text-textMuted">+1 234 567 8900<br/>+1 234 567 8901</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Info Bar Section -->
+<!-- BEGIN: Footer -->
+<section class="container mx-auto px-6 py-16">
+<div class="text-center mb-12">
+<div class="text-accent text-sm font-semibold tracking-widest mb-4 uppercase">TESTIMONIALS</div>
+<h2 class="font-heading text-4xl md:text-5xl font-bold text-primary mb-4">What Our Guests Say</h2>
+<div class="flex items-center justify-center gap-2 text-accent">
+<div class="w-16 h-px bg-accent/50"></div>
+<i class="fa-solid fa-heart"></i>
+<div class="w-16 h-px bg-accent/50"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-white rounded-[2rem] p-8 shadow-sm border border-gray-100 flex flex-col items-center text-center space-y-4 hover:shadow-md transition-shadow">
+<div class="flex text-accent text-sm">
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+</div>
+<p class="text-textMuted italic leading-relaxed">"The best dining experience in the city! The atmosphere is cozy and the food is absolutely divine."</p>
+<div class="flex items-center gap-4 pt-4">
+<img alt="Sarah J." class="w-12 h-12 rounded-full object-cover border-2 border-accent/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD---aP7JrgB_b1ZQTieduhCK4Gd9aLsxggOQ9KWOSFwuEm6MlwFtHUD4iouT3DCkCivHvf_m0BuZlBAg66E-poZ7gilB8ymmQOsYJrprY-J9tOlPwvgEgptXLvPwSj_x7iSgSxQSq60WIVUs3xstz09tbKge4lJRPLcQWPx5cIIqAijWm1jnEb03WH2fkonDRdcD-e-3V8kKcRDh9XsHeDgMUjMRhpwoapQso9E9yzlytP07-rije79g"/>
+<div class="text-left">
+<h5 class="font-bold text-primary">Sarah Johnson</h5>
+<p class="text-xs text-textMuted">Food Critic</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-primary text-white rounded-[2rem] p-8 shadow-xl flex flex-col items-center text-center space-y-4 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full -mr-8 -mt-8"></div>
+<div class="flex text-accent text-sm">
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+</div>
+<p class="text-white/80 italic leading-relaxed">"Incredible service and the Grilled Salmon was cooked to perfection. Flavoro has become our family's favorite spot."</p>
+<div class="flex items-center gap-4 pt-4">
+<img alt="Michael R." class="w-12 h-12 rounded-full object-cover border-2 border-accent" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1YOelUbQXlBfBmYoeMv9gQFnZ2Zj2-m5sZKiEh78Ui1jlwusz_ExFoCJuIz6wjAJLmj96_eM7oefAwDde8cDnQRlphNuAgklDjyNS305GD4gI7Ww_PzXk41n2gjja_8USX2S1nG8kvZYc9r6mY3n0aNTE3lGoZhcYn0kBOwpcdWLlFZx19EXd20h4fJTFKvnbHQORSblE_hF9unosdFv1EGaNbxo9PPApX7h7MO78ivUN9MfI0jigUg"/>
+<div class="text-left">
+<h5 class="font-bold">Michael Ross</h5>
+<p class="text-xs text-white/60">Local Resident</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-white rounded-[2rem] p-8 shadow-sm border border-gray-100 flex flex-col items-center text-center space-y-4 hover:shadow-md transition-shadow">
+<div class="flex text-accent text-sm">
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+</div>
+<p class="text-textMuted italic leading-relaxed">"A true hidden gem. The attention to detail in every dish is remarkable. Highly recommend the Chocolate Lava Cake!"</p>
+<div class="flex items-center gap-4 pt-4">
+<img alt="Emily L." class="w-12 h-12 rounded-full object-cover border-2 border-accent/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOf_4QRrFI-mfizX9teRxd_0GfpvxW04WzvmzkV2QiVAR6fvu5dRUaVEoaien3VOygskvUaz-_KZLfxIBcGTD7-gl4Ui6IAVwxJxIWCmQ3PDY-gTK-F8wrsO0jQO0lxd3ytc7pqOV6GA6kUbqg7U4S-Qb4458D1HjjH2kKaFHzPXDU7Ll6KLcE7PxghIuOOc_sbQ6S947pkptP0vzX2xIZOTfk72avIvrnSgUpDBC6ZvCw0NY664CS3g"/>
+<div class="text-left">
+<h5 class="font-bold text-primary">Emily Lawson</h5>
+<p class="text-xs text-textMuted">Travel Blogger</p>
+</div>
+</div>
+</div>
+</div>
+</section><section class="container mx-auto px-6 py-16" id="gallery">
+<div class="text-center mb-12">
+<div class="text-accent text-sm font-semibold tracking-widest mb-4 uppercase">A GLIMPSE OF FLAVORO</div>
+<h2 class="font-heading text-4xl md:text-5xl font-bold text-primary mb-4">Our Gallery</h2>
+<div class="flex items-center justify-center gap-2 text-accent">
+<div class="w-16 h-px bg-accent/50"></div>
+<i class="fa-solid fa-heart"></i>
+<div class="w-16 h-px bg-accent/50"></div>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+<div class="aspect-square overflow-hidden rounded-2xl group">
+<img alt="Cocktail" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhHG9lmTW-ZGFs1MugEUs1tKnGMKGPO4LyXBMs6Vh6p2GMcnlgiT5kD_x0Rk5f8-oEB5hUz9bKB1jjgJsUzSQhwP9Inj3ScAl0-FLSPoiUmyta-UhY70QTdteDL6NSc5zYGMkV7Yx-FHX8oLDs2bSn9_jpX94XAyNBglHYFFq9ZhuZTarDWi1DvW-aDMu9JUnpXfc7ICDyisUjgXFEoFwFRIx4ZkSyXYSjMntEXplvjgt8X1c3g1ZUew"/>
+</div>
+<div class="aspect-square overflow-hidden rounded-2xl group">
+<img alt="Restaurant Interior" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMAjwMDffIrLeTeZHbywHi56RJgAt8c31acG1mBBn3GNbtRcJdEtEsA6dDQ0JYFRMd0tcqdHc_Pp66fAEpfx35Xn1okXVS7TZ6tDNxfbajpHw6sbf99rGM0fvVCb6ezvTrpFTcVTzGZFqO-XLTiWLXvXuE1_cpk_cwMBLLySVJUE3JdBapJobGGNPCxncWA1xZtLOpuovYLOJ4-wb_nRHky7yALIbmuWg2HOs_91r1HM4MwRuwUg3hwA"/>
+</div>
+<div class="aspect-square overflow-hidden rounded-2xl group">
+<img alt="Plated Dish" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABqkqHgngyJEXgKadD6M9cdBmCUa7WAdYGDqqTK3kwy8sh6WSyXMgRFnXVf7c6xOx88KQcoIsUOwXDKHH8cxAxGisSBuzc1lhHrvCSoFuh3Q1ayd5fr1f7kRWUytCeXeMFIGQfH01EmYvAw7Nj6K9hwnwmiNFlcNuQGFx3_scHaBDNBIF-EB5f16PhbsMW9zvH8kJOsZ-zOSWqhvK0-5nMXn62jB3CMFlHmZlhAmHqesK-lh1uOzPVwg"/>
+</div>
+<div class="aspect-square overflow-hidden rounded-2xl group">
+<img alt="Dining Experience" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDRWmoAiM610JHXY4Hpd4y_JjxseTxOasVetWhCjV4i12VYevb0aJid0CoHmPq6wLgiTTk2cngGdzrYTgPR5kWnv_4uHhYujG1j7WSS7D9A4QC0N5MPXetdGa5F7ZytSS3ScTzjbdJdeA8NxUXnJiRI6oukWOeDIIo1bRZoQP9qc7Gof5HZ3Tf2twuM_IfD-vPQHYQfYPI6XarHTwHW7x4Na9i74lqLBEvLBELEF5y19utv-2Z1gPz_A"/>
+</div>
+<div class="aspect-square overflow-hidden rounded-2xl group">
+<img alt="Steak" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0C_uXlfnabv97TPS1ucRX_4DYjp1IHSqbRuvSNqSxutKZf9ZTZ_tt_yXqHzJbTpc8HFW-ICXjzb0_cM7PGNvzPEh9ns2bsd7f0imI4Cuya9GdH4-PDRVdPQhOp5BupBwXKUajz8vf9gO7dU_4ZrRTaiCCugLiH1V-bWXHnkUVNZBEp8gG_fZXcDsmxaC0ZJ15WA1BHaHDXN5OFrX-Qj4TIdbDBQXSICG6xArMTfB1IMyFQBh9UdAsKg"/>
+</div>
+<div class="aspect-square overflow-hidden rounded-2xl group">
+<img alt="Chef at work" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNCqS5OUPUKuVu_x-E6VJfeeaUfGaE_0OFd91_QY7MaHJr3yHc-tZvqMIg1L4LOp9kN4UL4KdCrneQk2i2vMl4VHBCWVJNLiAB9rWBjCgPB8oRUb-7znOfeejQbLACM56pvHk8p8dNbu-bsaN2ZQJBhUMMMnYD1Vf7uFMPQOThOysynm2NAbZyi6Bts2PKabpux4gCzYgCTasgexanjqk_TFrBQ6W1YhHbHXCAa-GmXsMyMqW9uFO8NQ"/>
+</div>
+<div class="aspect-square overflow-hidden rounded-2xl group">
+<img alt="Bar area" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0-5_lYE64-oiThYoLxfnnxdbv54pQ692V9uzVkiAzcplE5vKmXJd31J7pcYXHxXeMNAPl3V1NFDCBYvQOsKh5SY4TV5WKlIyvU8x9ApvgCCuVfz8hiWWcPo6VI6HIhabKnt0AQ8TOQcP0BeG6AvIjKgEZ1JeOembz3zXOmTM0Ke91YeMLHkHneOMEilBcaty1k3x_9zzLsW2xqlQKDAsffvbVl4k9giyUPMrI6R7mmWlHabY5nlGQCg"/>
+</div>
+<div class="aspect-square overflow-hidden rounded-2xl group">
+<img alt="Gourmet Dish" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcxCyElGkNAu4WUmxli5WerYnPL_bLSBFeO8hLWMI64juN_IeEbhORp7W64UEGml1by6zOzv-xKexyy9wpkX3lRJ_84K6BfIpcB3rziNcjNllm22K-bk6FXMxSTCNHWMuyz4EdMh0jugM5ReyrqK3d7p3AhpQB9ior1-7RibSL0IA4-VsfPI6EEbb2asRtkSbd63S4zL-fNfhYJ63U26x9ijeIiyRJOA8Tgi_cutuYAc5PsjEnhib-kQ"/>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="bg-white border border-gray-300 hover:border-primary text-primary px-8 py-3 rounded-full font-medium transition-colors shadow-sm">
+      VIEW MORE
+    </button>
+</div>
+</section><footer class="bg-primary text-white py-8 mt-12 relative overflow-hidden">
+<!-- Dark decorative background element -->
+<div class="absolute bottom-0 right-0 w-[500px] h-[300px] bg-[url('https://placehold.co/500x300/112211/1a3c34?text=Leaves+Dark')] bg-no-repeat bg-right-bottom bg-contain opacity-30 pointer-events-none"></div>
+<div class="absolute top-0 left-0 w-[300px] h-[200px] bg-[url('https://placehold.co/300x200/112211/1a3c34?text=Leaves+Dark')] bg-no-repeat bg-left-top bg-contain opacity-30 pointer-events-none"></div>
+<div class="container mx-auto px-6 relative z-10 flex flex-col md:flex-row justify-between items-center gap-6">
+<!-- Footer Logo & Copyright -->
+<div class="flex items-center gap-4">
+<div class="text-accent text-3xl">
+<i class="fa-solid fa-hat-chef"></i>
+</div>
+<div>
+<h2 class="font-script text-3xl leading-none text-white">Flavoro</h2>
+<p class="text-[10px] text-white/50 mt-1">© 2024 Flavoro Restaurant.<br/>All Rights Reserved.</p>
+</div>
+</div>
+<!-- Social Links -->
+<div class="flex items-center gap-4">
+<span class="text-sm text-white/70 mr-2">Follow Us</span>
+<a class="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center hover:bg-accent hover:border-accent transition-colors" href="#">
+<i class="fa-brands fa-facebook-f text-sm"></i>
+</a>
+<a class="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center hover:bg-accent hover:border-accent transition-colors" href="#">
+<i class="fa-brands fa-instagram text-sm"></i>
+</a>
+<a class="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center hover:bg-accent hover:border-accent transition-colors" href="#">
+<i class="fa-brands fa-twitter text-sm"></i>
+</a>
+<a class="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center hover:bg-accent hover:border-accent transition-colors" href="#">
+<i class="fa-brands fa-pinterest-p text-sm"></i>
+</a>
+</div>
+<!-- CTA -->
+<div class="flex flex-col items-end gap-2">
+<span class="text-sm text-white/80 font-medium">Craving Something Delicious?</span>
+<button class="bg-accent hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium transition-colors text-sm flex items-center gap-2">
+          BOOK A TABLE <i class="fa-solid fa-arrow-right text-xs"></i>
+</button>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+</body></html>

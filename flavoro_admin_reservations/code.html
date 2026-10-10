@@ -1,0 +1,206 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed-variant":"#713700","on-primary-fixed-variant":"#2b4d44","on-background":"#1b1c1c","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","inverse-surface":"#303030","on-tertiary-fixed-variant":"#484742","on-tertiary-fixed":"#1c1c18","error-container":"#ffdad6","on-secondary-fixed":"#301400","secondary-container":"#fc8f34","surface-container-high":"#eae8e7","on-primary-fixed":"#00201a","tertiary-fixed-dim":"#c9c6c0","error":"#ba1a1a","surface-bright":"#fbf9f8","surface-container":"#f0eded","background":"#fbf9f8","secondary-fixed":"#ffdcc5","tertiary-fixed":"#e6e2db","outline-variant":"#c1c8c4","on-error":"#ffffff","on-secondary":"#ffffff","primary":"#01261f","on-error-container":"#93000a","on-primary":"#ffffff","surface-container-low":"#f6f3f2","inverse-on-surface":"#f3f0f0","primary-container":"#1a3c34","tertiary":"#21211d","surface-tint":"#43655c","on-surface-variant":"#414846","on-surface":"#1b1c1c","on-tertiary-container":"#a19f99","secondary":"#944a00","outline":"#717976","inverse-primary":"#aacec3","surface":"#fbf9f8","primary-fixed":"#c5eadf","surface-dim":"#dcd9d9","secondary-fixed-dim":"#ffb783","on-primary-container":"#83a69c","surface-container-highest":"#e4e2e1","primary-fixed-dim":"#aacec3","surface-variant":"#e4e2e1","on-secondary-container":"#663100","tertiary-container":"#373632"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"24px","unit":"8px","container-max":"1200px","section-gap":"80px","margin-mobile":"20px"},"fontFamily":{"body-lg":["Plus Jakarta Sans"],"headline-lg":["DM Serif Display"],"body-md":["Plus Jakarta Sans"],"display-lg-mobile":["DM Serif Display"],"headline-md":["DM Serif Display"],"display-lg":["DM Serif Display"],"title-lg":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"]},"fontSize":{"body-lg":["18px",{"lineHeight":"30px","fontWeight":"400"}],"headline-lg":["48px",{"lineHeight":"56px","fontWeight":"400"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-lg-mobile":["40px",{"lineHeight":"48px","fontWeight":"400"}],"headline-md":["32px",{"lineHeight":"40px","fontWeight":"400"}],"display-lg":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"400"}],"title-lg":["20px",{"lineHeight":"28px","fontWeight":"700"}],"label-caps":["14px",{"lineHeight":"20px","letterSpacing":"0.1em","fontWeight":"800"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-full mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[28px]">restaurant_menu</span><span class="font-headline-md text-[24px] text-primary tracking-tight">Flavoro Admin</span></div><div class="flex items-center gap-4"><a class="font-label-caps text-[12px] text-on-surface-variant hover:text-secondary" data-path="home" href="#">BACK TO SITE</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 h-[calc(100vh-64px)] w-64 bg-surface-container-low border-r border-outline-variant z-40"><nav class="p-4 flex flex-col gap-1" data-active-classes="bg-primary text-on-primary font-bold"><a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-caps text-label-caps" data-path="dashboard" href="#">DASHBOARD</a><a aria-current="page" class="flex items-center px-4 py-3 rounded-lg transition-colors bg-primary text-on-primary font-bold" data-path="reservations" href="#">RESERVATIONS</a><a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-caps text-label-caps" data-path="menu-management" href="#">MENU MANAGEMENT</a><a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-caps text-label-caps" data-path="staff" href="#">STAFF</a><a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-caps text-label-caps" data-path="analytics" href="#">ANALYTICS</a></nav></aside><main class="pl-64 pt-16 w-full"><div class="flex flex-col w-full h-full pb-[120px] bg-background">
+<!-- Header Section -->
+<div class="w-full bg-surface-container-low px-gutter py-[64px] flex flex-col md:flex-row md:items-end justify-between gap-6 shadow-[0_4px_24px_rgba(0,0,0,0.02)]">
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Reservations Management</span>
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight">Today's Service</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-4">Manage incoming guests, assign tables, and monitor dining room flow for Tuesday, October 24th. Currently expecting 142 guests across 38 reservations.</p>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-2 px-6 py-4 rounded-full bg-surface border border-outline-variant text-on-surface hover:bg-surface-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+<span class="font-label-caps text-[13px] tracking-wider">Select Date</span>
+</button>
+<button class="flex items-center gap-2 px-8 py-4 rounded-full bg-secondary text-on-secondary hover:bg-[#b55c00] transition-colors shadow-[0_8px_16px_rgba(148,74,0,0.2)]">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span class="font-label-caps text-[13px] tracking-wider">Manual Booking</span>
+</button>
+</div>
+</div>
+<!-- Main Content Area -->
+<div class="max-w-[1400px] mx-auto w-full px-gutter mt-section-gap flex flex-col xl:flex-row gap-gutter">
+<!-- Sidebar Filters -->
+<aside class="w-full xl:w-[320px] flex-shrink-0 flex flex-col gap-8">
+<div class="bg-surface-container p-8 rounded-2xl shadow-sm">
+<h3 class="font-headline-md text-[24px] text-primary mb-6">Filters</h3>
+<div class="flex flex-col gap-6">
+<div class="flex flex-col gap-3">
+<label class="font-label-caps text-[12px] text-on-surface-variant uppercase tracking-widest">Time Blocks</label>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary font-body-md text-[14px] shadow-sm">All Day</button>
+<button class="px-4 py-2 rounded-lg bg-surface border border-outline-variant text-on-surface hover:bg-surface-container font-body-md text-[14px] transition-colors">Lunch (11a-3p)</button>
+<button class="px-4 py-2 rounded-lg bg-surface border border-outline-variant text-on-surface hover:bg-surface-container font-body-md text-[14px] transition-colors">Dinner (5p-10p)</button>
+</div>
+</div>
+<div class="w-full h-[1px] bg-outline-variant/30"></div>
+<div class="flex flex-col gap-3">
+<label class="font-label-caps text-[12px] text-on-surface-variant uppercase tracking-widest">Party Size</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="py-2 rounded-lg bg-surface border border-outline-variant text-on-surface hover:bg-surface-container font-body-md text-[14px] transition-colors text-center">1-2</button>
+<button class="py-2 rounded-lg bg-primary text-on-primary font-body-md text-[14px] shadow-sm text-center">3-4</button>
+<button class="py-2 rounded-lg bg-surface border border-outline-variant text-on-surface hover:bg-surface-container font-body-md text-[14px] transition-colors text-center">5-6</button>
+<button class="py-2 rounded-lg bg-surface border border-outline-variant text-on-surface hover:bg-surface-container font-body-md text-[14px] transition-colors text-center">7+</button>
+</div>
+</div>
+<div class="w-full h-[1px] bg-outline-variant/30"></div>
+<div class="flex flex-col gap-3">
+<label class="font-label-caps text-[12px] text-on-surface-variant uppercase tracking-widest">Status</label>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-5 h-5 rounded border border-secondary flex items-center justify-center bg-secondary">
+<span class="material-symbols-outlined text-[14px] text-on-secondary font-bold">check</span>
+</div>
+<span class="font-body-md text-[15px] text-on-surface group-hover:text-secondary transition-colors">Confirmed</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-5 h-5 rounded border border-outline-variant flex items-center justify-center group-hover:border-secondary transition-colors"></div>
+<span class="font-body-md text-[15px] text-on-surface group-hover:text-secondary transition-colors">Seated</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-5 h-5 rounded border border-outline-variant flex items-center justify-center group-hover:border-secondary transition-colors"></div>
+<span class="font-body-md text-[15px] text-on-surface group-hover:text-secondary transition-colors">Canceled</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- Floor Plan Quick View -->
+<div class="bg-primary-container p-8 rounded-2xl relative overflow-hidden group cursor-pointer shadow-[0_8px_32px_rgba(1,38,31,0.1)]">
+<div class="absolute inset-0 opacity-20 transition-transform duration-700 group-hover:scale-105" data-alt="A stylized architectural floor plan blueprint of a high-end restaurant dining room, featuring round and rectangular tables, booths, and a bar area, rendered in deep forest green and pale gold lines." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA1Mc3Bx6T52HiaRv5GVOreSaDdyY09ff9lHW4XR06o0AS8nouF59PGWytM9Dhuk478PgAmv4BiFXEXHNqtNZWNjVpItN002NPNApwLPDPHaHna7t2HRJPLbsuvKacE4ghz6yWBRlRJq-9JqLsySzLuXBhBZSMqZ2MsZWJpiXqdakBQDJLDke9uzygdgtvYt4EuJ39ZCL4g--uN5jBNhbXn1ykGtazYweyXODm9Egpp5tIqvxIcVkWkdA')"></div>
+<div class="relative z-10">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-on-primary">map</span>
+</div>
+<h3 class="font-headline-md text-[24px] text-on-primary-container mb-2">Floor Plan View</h3>
+<p class="font-body-md text-[14px] text-on-primary-container/80 mb-6">Switch to spatial table management and live seating assignments.</p>
+<span class="font-label-caps text-[12px] text-primary-fixed uppercase tracking-widest flex items-center gap-2 group-hover:translate-x-2 transition-transform">
+                        Open Map <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+</div>
+</div>
+</aside>
+<!-- Reservations List -->
+<div class="flex-1 flex flex-col gap-6">
+<!-- List Header Stats -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+<div class="bg-surface p-6 rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.03)] border border-outline-variant/30 flex flex-col gap-1">
+<span class="font-label-caps text-[11px] text-on-surface-variant uppercase tracking-widest">Total Bookings</span>
+<span class="font-display-lg text-[32px] text-primary">38</span>
+</div>
+<div class="bg-surface p-6 rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.03)] border border-outline-variant/30 flex flex-col gap-1">
+<span class="font-label-caps text-[11px] text-on-surface-variant uppercase tracking-widest">Expected Guests</span>
+<span class="font-display-lg text-[32px] text-primary">142</span>
+</div>
+<div class="bg-surface p-6 rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.03)] border border-outline-variant/30 flex flex-col gap-1">
+<span class="font-label-caps text-[11px] text-on-surface-variant uppercase tracking-widest">Currently Seated</span>
+<span class="font-display-lg text-[32px] text-secondary">24</span>
+</div>
+<div class="bg-surface p-6 rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.03)] border border-outline-variant/30 flex flex-col gap-1">
+<span class="font-label-caps text-[11px] text-on-surface-variant uppercase tracking-widest">Available Tables</span>
+<span class="font-display-lg text-[32px] text-primary">12</span>
+</div>
+</div>
+<!-- List Items Container -->
+<div class="flex flex-col gap-4">
+<!-- Reservation Item 1 -->
+<div class="bg-surface rounded-2xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-outline-variant/20 hover:border-outline-variant/50 transition-colors flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+<div class="flex items-center gap-6 min-w-[300px]">
+<div class="w-16 h-16 rounded-xl bg-primary-fixed-dim flex flex-col items-center justify-center flex-shrink-0">
+<span class="font-headline-md text-[20px] text-on-primary-fixed leading-none">6:30</span>
+<span class="font-label-caps text-[10px] text-on-primary-fixed/70 mt-1">PM</span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-title-lg text-title-lg text-on-surface">Eleanor Vance</h4>
+<p class="font-body-md text-[14px] text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">phone_iphone</span> +1 (555) 019-2834
+                            </p>
+</div>
+</div>
+<div class="flex items-center gap-8 flex-1 w-full lg:w-auto">
+<div class="flex flex-col gap-1">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest">Party</span>
+<span class="font-body-md text-[16px] text-on-surface font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-secondary">group</span> 4
+                            </span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest">Table</span>
+<span class="font-body-md text-[16px] text-primary font-medium flex items-center gap-1 bg-surface-container px-3 py-1 rounded-md">
+                                T-12
+                            </span>
+</div>
+<div class="flex flex-col gap-1 flex-1 min-w-0">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest">Notes</span>
+<span class="font-body-md text-[14px] text-on-surface truncate bg-tertiary-fixed/30 px-3 py-1 rounded-md text-on-tertiary-fixed border border-tertiary-fixed-dim">
+                                Anniversary. Window seat requested.
+                            </span>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-4 lg:mt-0">
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-on-error-container hover:border-error-container transition-colors group" title="Cancel">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" title="Edit">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="px-6 py-2 h-10 rounded-full bg-secondary text-on-secondary hover:bg-[#b55c00] transition-colors font-label-caps text-[12px] tracking-wider ml-2 shadow-sm">
+                            CHECK IN
+                        </button>
+</div>
+</div>
+<!-- Reservation Item 2 (VIP) -->
+<div class="bg-surface rounded-2xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.04)] border-l-4 border-l-[#d4af37] flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-[#d4af37]/5 rounded-bl-[100%] pointer-events-none"></div>
+<div class="flex items-center gap-6 min-w-[300px]">
+<div class="w-16 h-16 rounded-xl bg-surface-container-high flex flex-col items-center justify-center flex-shrink-0">
+<span class="font-headline-md text-[20px] text-on-surface leading-none">7:00</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant mt-1">PM</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<h4 class="font-title-lg text-title-lg text-on-surface">Julian Blackwood</h4>
+<span class="bg-[#d4af37]/20 text-[#8a7224] px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider">VIP</span>
+</div>
+<p class="font-body-md text-[14px] text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">phone_iphone</span> +1 (555) 837-1922
+                            </p>
+</div>
+</div>
+<div class="flex items-center gap-8 flex-1 w-full lg:w-auto">
+<div class="flex flex-col gap-1">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest">Party</span>
+<span class="font-body-md text-[16px] text-on-surface font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-secondary">group</span> 2
+                            </span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest">Table</span>
+<span class="font-body-md text-[16px] text-primary font-medium flex items-center gap-1 bg-surface-container px-3 py-1 rounded-md">
+                                B-04
+                            </span>
+</div>
+<div class="flex flex-col gap-1 flex-1 min-w-0">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest">Notes</span>
+<span class="font-body-md text-[14px] text-on-surface truncate bg-tertiary-fixed/30 px-3 py-1 rounded-md text-on-tertiary-fixed border border-tertiary-fixed-dim">
+                                Severe shellfish allergy. Prefers quiet corner.
+                            </span>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-4 lg:mt-0 relative z-10">
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-on-error-container hover:border-error-container transition-colors group" title="Cancel">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" title="Edit">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="px-6 py-2 h-10 rounded-full bg-secondary text-on-secondary hover:bg-[#b55c00] transition-colors font-label-caps text-[12px] tracking-wider ml-2 shadow-sm">
+                            CHECK IN
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></body></html>

@@ -1,0 +1,146 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed-variant":"#713700","on-primary-fixed-variant":"#2b4d44","on-background":"#1b1c1c","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","inverse-surface":"#303030","on-tertiary-fixed-variant":"#484742","on-tertiary-fixed":"#1c1c18","error-container":"#ffdad6","on-secondary-fixed":"#301400","secondary-container":"#fc8f34","surface-container-high":"#eae8e7","on-primary-fixed":"#00201a","tertiary-fixed-dim":"#c9c6c0","error":"#ba1a1a","surface-bright":"#fbf9f8","surface-container":"#f0eded","background":"#fbf9f8","secondary-fixed":"#ffdcc5","tertiary-fixed":"#e6e2db","outline-variant":"#c1c8c4","on-error":"#ffffff","on-secondary":"#ffffff","primary":"#01261f","on-error-container":"#93000a","on-primary":"#ffffff","surface-container-low":"#f6f3f2","inverse-on-surface":"#f3f0f0","primary-container":"#1a3c34","tertiary":"#21211d","surface-tint":"#43655c","on-surface-variant":"#414846","on-surface":"#1b1c1c","on-tertiary-container":"#a19f99","secondary":"#944a00","outline":"#717976","inverse-primary":"#aacec3","surface":"#fbf9f8","primary-fixed":"#c5eadf","surface-dim":"#dcd9d9","secondary-fixed-dim":"#ffb783","on-primary-container":"#83a69c","surface-container-highest":"#e4e2e1","primary-fixed-dim":"#aacec3","surface-variant":"#e4e2e1","on-secondary-container":"#663100","tertiary-container":"#373632"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"24px","unit":"8px","container-max":"1200px","section-gap":"80px","margin-mobile":"20px"},"fontFamily":{"body-lg":["Plus Jakarta Sans"],"headline-lg":["DM Serif Display"],"body-md":["Plus Jakarta Sans"],"display-lg-mobile":["DM Serif Display"],"headline-md":["DM Serif Display"],"display-lg":["DM Serif Display"],"title-lg":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"]},"fontSize":{"body-lg":["18px",{"lineHeight":"30px","fontWeight":"400"}],"headline-lg":["48px",{"lineHeight":"56px","fontWeight":"400"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-lg-mobile":["40px",{"lineHeight":"48px","fontWeight":"400"}],"headline-md":["32px",{"lineHeight":"40px","fontWeight":"400"}],"display-lg":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"400"}],"title-lg":["20px",{"lineHeight":"28px","fontWeight":"700"}],"label-caps":["14px",{"lineHeight":"20px","letterSpacing":"0.1em","fontWeight":"800"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1200px] mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[32px]">restaurant_menu</span><span class="font-headline-md text-headline-md text-primary tracking-tight">Flavoro</span></div><nav class="hidden lg:flex items-center gap-8" data-active-classes="text-secondary font-bold underline underline-offset-8 decoration-2"><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" data-path="home" href="#">HOME</a><a aria-current="page" class="transition-colors text-secondary font-bold underline underline-offset-8 decoration-2" data-path="menu" href="#">MENU</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" data-path="about-us" href="#">ABOUT US</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" data-path="gallery" href="#">GALLERY</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" data-path="contact" href="#">CONTACT</a></nav><div class="flex items-center gap-6"><a class="hidden sm:flex bg-secondary text-on-secondary px-6 py-2.5 rounded-full font-label-caps text-label-caps hover:bg-on-secondary-container transition-all items-center gap-2" data-path="booking" href="#">BOOK A TABLE <span class="material-symbols-outlined text-[18px]">calendar_today</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20"><div class="flex flex-col w-full">
+<!-- Contact Hero Section -->
+<section class="relative w-full pt-12 pb-section-gap flex flex-col items-center text-center px-gutter max-w-container-max mx-auto">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest mb-4">GET IN TOUCH</span>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-6 max-w-3xl">We would love to hear from you.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+      Whether you are looking to book a private event, inquire about our seasonal menu, or simply say hello, our team is here to assist you with the utmost care.
+    </p>
+</section>
+<!-- Contact Form & Details Split -->
+<section class="w-full px-gutter pb-section-gap max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-gutter items-start">
+<!-- Contact Details Sidebar -->
+<div class="lg:col-span-4 flex flex-col gap-12 bg-surface-container rounded-2xl p-8 lg:p-12 shadow-sm">
+<!-- Visit Us -->
+<div>
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary text-[24px]">location_on</span>
+<h2 class="font-title-lg text-title-lg text-on-surface">Visit Us</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">123 Gourmet Way</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Epicurean District, FL 34567</p>
+</div>
+<!-- Contact Info -->
+<div>
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary text-[24px]">call</span>
+<h2 class="font-title-lg text-title-lg text-on-surface">Contact</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2 hover:text-secondary cursor-pointer transition-colors">+1 (555) 123-4567</p>
+<p class="font-body-md text-body-md text-on-surface-variant hover:text-secondary cursor-pointer transition-colors">hello@flavoro.com</p>
+</div>
+<!-- Hours -->
+<div>
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary text-[24px]">schedule</span>
+<h2 class="font-title-lg text-title-lg text-on-surface">Hours</h2>
+</div>
+<div class="flex justify-between items-center mb-2">
+<span class="font-body-md text-body-md text-on-surface-variant">Mon - Thu</span>
+<span class="font-body-md text-body-md text-on-surface">5:00 PM - 10:00 PM</span>
+</div>
+<div class="flex justify-between items-center mb-2">
+<span class="font-body-md text-body-md text-on-surface-variant">Fri - Sat</span>
+<span class="font-body-md text-body-md text-on-surface">5:00 PM - 11:00 PM</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-body-md text-body-md text-on-surface-variant">Sunday</span>
+<span class="font-body-md text-body-md text-on-surface">4:00 PM - 9:00 PM</span>
+</div>
+</div>
+<!-- Socials -->
+<div>
+<div class="flex items-center gap-3 mb-4">
+<h2 class="font-title-lg text-title-lg text-on-surface">Follow Us</h2>
+</div>
+<div class="flex gap-4">
+<a class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-secondary group transition-colors shadow-sm" href="#">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-secondary transition-colors text-[24px]">public</span>
+</a>
+<a class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-secondary group transition-colors shadow-sm" href="#">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-secondary transition-colors text-[24px]">photo_camera</span>
+</a>
+<a class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-secondary group transition-colors shadow-sm" href="#">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-secondary transition-colors text-[24px]">play_circle</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Contact Form -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-2xl p-8 lg:p-12 shadow-sm border border-surface-container">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-8">Send a Message</h2>
+<form class="flex flex-col gap-6" onsubmit="event.preventDefault(); this.querySelector('button').innerHTML = 'Sending...'; setTimeout(() => { this.querySelector('button').innerHTML = 'Message Sent'; this.querySelector('button').classList.add('bg-primary'); this.reset(); }, 1500);">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant" for="name">NAME</label>
+<input class="bg-surface-container-low rounded-lg px-4 py-3 font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary transition-all border border-transparent hover:border-outline-variant" id="name" placeholder="Jane Doe" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant" for="email">EMAIL</label>
+<input class="bg-surface-container-low rounded-lg px-4 py-3 font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary transition-all border border-transparent hover:border-outline-variant" id="email" placeholder="jane@example.com" required="" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant" for="subject">SUBJECT</label>
+<div class="relative">
+<select class="appearance-none w-full bg-surface-container-low rounded-lg px-4 py-3 font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary transition-all border border-transparent hover:border-outline-variant cursor-pointer" id="subject">
+<option value="reservation">Private Dining & Events</option>
+<option value="feedback">General Inquiry</option>
+<option value="career">Careers</option>
+<option value="press">Press & Media</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant" for="message">MESSAGE</label>
+<textarea class="bg-surface-container-low rounded-lg px-4 py-3 font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary transition-all border border-transparent hover:border-outline-variant resize-y" id="message" placeholder="How can we help you?" required="" rows="5"></textarea>
+</div>
+<button class="mt-4 bg-secondary text-on-secondary px-8 py-4 rounded-full font-label-caps text-label-caps hover:bg-on-secondary-container transition-all flex items-center justify-center gap-2 w-full md:w-auto self-start shadow-md hover:shadow-lg" type="submit">
+            SEND MESSAGE <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Map Section -->
+<section class="w-full h-[500px] bg-surface-variant relative overflow-hidden group">
+<div class="absolute inset-0 z-10 bg-primary/5 pointer-events-none group-hover:bg-transparent transition-colors duration-700"></div>
+<div class="w-full h-full bg-cover bg-center" data-alt="An elegant map showing the Epicurean District in Florida, stylized with warm beige and subtle green tones reflecting the Flavoro modern classic aesthetic. The location pin is highlighted in deep forest green. Clean streets, high-end context." data-location="Epicurean District, FL 34567" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQfuwKDQvH8Q-XMU5jkjDflxkFo2Z_aN-n-ExNBpVcYSUaTf189oFn9T2RxDYGzfqyNydkgasMb3AY7CPXIN7RcSs16-V1F8J7NyalWz1ZAWnq6ypGBbXBf3Gk5IZnCj-gamATnMqLoENqGkoILTX_a5C1fQgg2eWpoJPCUHnr7ilqmYr0iQym6WbMxWxRJA5rInj9J-OKnWxCJaYdsVgNA7-wsOJtrvoscpy_QHrcBz5qjtNaEhJ7Pw')"></div>
+<!-- Floating Map Card -->
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-12 lg:bottom-12 z-20 bg-surface-container-lowest/90 backdrop-blur-md p-6 rounded-2xl shadow-xl flex items-center gap-4 w-[90%] max-w-sm">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Flavoro Flagship</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">Get directions to our main location.</p>
+</div>
+<a class="ml-auto text-secondary hover:text-on-secondary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">directions</span>
+</a>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="w-full bg-primary py-section-gap px-gutter text-center relative overflow-hidden">
+<!-- Decorative background elements -->
+<div class="absolute -top-32 -right-32 w-96 h-96 bg-primary-container rounded-full blur-3xl opacity-50 mix-blend-screen pointer-events-none"></div>
+<div class="absolute -bottom-32 -left-32 w-96 h-96 bg-secondary/20 rounded-full blur-3xl opacity-50 mix-blend-screen pointer-events-none"></div>
+<div class="max-w-2xl mx-auto relative z-10 flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary text-[48px] mb-6">local_florist</span>
+<h2 class="font-headline-lg text-headline-lg text-on-primary mb-4">Join Our Table</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container mb-8">
+        Subscribe to our newsletter for exclusive invites, seasonal menu previews, and tales from our kitchen garden.
+      </p>
+<form class="flex flex-col sm:flex-row gap-4 w-full max-w-md" onsubmit="event.preventDefault(); const btn = this.querySelector('button'); const orig = btn.innerHTML; btn.innerHTML = 'Subscribed!'; btn.classList.add('bg-secondary-container', 'text-on-secondary-container'); setTimeout(() => { btn.innerHTML = orig; btn.classList.remove('bg-secondary-container', 'text-on-secondary-container'); this.reset(); }, 2000);">
+<input class="flex-1 bg-surface-container-lowest/10 backdrop-blur-sm rounded-full px-6 py-3 font-body-md text-body-md text-on-primary placeholder:text-on-primary-container focus:outline-none focus:ring-2 focus:ring-secondary transition-all border border-on-primary-container/30" placeholder="Your email address" required="" type="email"/>
+<button class="bg-secondary text-on-secondary px-8 py-3 rounded-full font-label-caps text-label-caps hover:bg-on-secondary-container transition-all whitespace-nowrap shadow-md hover:shadow-lg" type="submit">
+          SUBSCRIBE
+        </button>
+</form>
+</div>
+</section>
+</div></main><footer class="w-full bg-primary text-on-primary py-section-gap"><div class="max-w-[1200px] mx-auto px-gutter"><div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12"><div class="space-y-4"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-fixed-dim text-[24px]">restaurant_menu</span><span class="font-headline-md text-headline-md">Flavoro</span></div><p class="font-body-md text-on-primary-container max-w-xs">Crafting unforgettable epicurean experiences rooted in heritage and organic farm-to-table excellence.</p></div><div class="space-y-4"><h4 class="font-title-lg text-title-lg text-secondary-fixed-dim">Follow Our Story</h4><div class="flex gap-4"><a class="w-10 h-10 rounded-full border border-on-primary-container flex items-center justify-center hover:bg-secondary hover:border-secondary transition-all" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a><a class="w-10 h-10 rounded-full border border-on-primary-container flex items-center justify-center hover:bg-secondary hover:border-secondary transition-all" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a><a class="w-10 h-10 rounded-full border border-on-primary-container flex items-center justify-center hover:bg-secondary hover:border-secondary transition-all" href="#"><span class="material-symbols-outlined text-[20px]">share</span></a><a class="w-10 h-10 rounded-full border border-on-primary-container flex items-center justify-center hover:bg-secondary hover:border-secondary transition-all" href="#"><span class="material-symbols-outlined text-[20px]">push_pin</span></a></div></div><div class="space-y-4"><h4 class="font-title-lg text-title-lg text-secondary-fixed-dim">Visit Us</h4><p class="font-body-md text-on-primary-container">123 Gourmet Way<br/>Epicurean District, FL 34567</p></div></div><div class="pt-8 border-t border-on-primary-fixed-variant text-center"><p class="font-label-caps text-label-caps text-on-primary-container">© 2024 FLAVORO RESTAURANT. ALL RIGHTS RESERVED.</p></div></div></footer></body></html>

@@ -1,0 +1,197 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed-variant":"#713700","on-primary-fixed-variant":"#2b4d44","on-background":"#1b1c1c","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","inverse-surface":"#303030","on-tertiary-fixed-variant":"#484742","on-tertiary-fixed":"#1c1c18","error-container":"#ffdad6","on-secondary-fixed":"#301400","secondary-container":"#fc8f34","surface-container-high":"#eae8e7","on-primary-fixed":"#00201a","tertiary-fixed-dim":"#c9c6c0","error":"#ba1a1a","surface-bright":"#fbf9f8","surface-container":"#f0eded","background":"#fbf9f8","secondary-fixed":"#ffdcc5","tertiary-fixed":"#e6e2db","outline-variant":"#c1c8c4","on-error":"#ffffff","on-secondary":"#ffffff","primary":"#01261f","on-error-container":"#93000a","on-primary":"#ffffff","surface-container-low":"#f6f3f2","inverse-on-surface":"#f3f0f0","primary-container":"#1a3c34","tertiary":"#21211d","surface-tint":"#43655c","on-surface-variant":"#414846","on-surface":"#1b1c1c","on-tertiary-container":"#a19f99","secondary":"#944a00","outline":"#717976","inverse-primary":"#aacec3","surface":"#fbf9f8","primary-fixed":"#c5eadf","surface-dim":"#dcd9d9","secondary-fixed-dim":"#ffb783","on-primary-container":"#83a69c","surface-container-highest":"#e4e2e1","primary-fixed-dim":"#aacec3","surface-variant":"#e4e2e1","on-secondary-container":"#663100","tertiary-container":"#373632"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"24px","unit":"8px","container-max":"1200px","section-gap":"80px","margin-mobile":"20px"},"fontFamily":{"body-lg":["Plus Jakarta Sans"],"headline-lg":["DM Serif Display"],"body-md":["Plus Jakarta Sans"],"display-lg-mobile":["DM Serif Display"],"headline-md":["DM Serif Display"],"display-lg":["DM Serif Display"],"title-lg":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"]},"fontSize":{"body-lg":["18px",{"lineHeight":"30px","fontWeight":"400"}],"headline-lg":["48px",{"lineHeight":"56px","fontWeight":"400"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-lg-mobile":["40px",{"lineHeight":"48px","fontWeight":"400"}],"headline-md":["32px",{"lineHeight":"40px","fontWeight":"400"}],"display-lg":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"400"}],"title-lg":["20px",{"lineHeight":"28px","fontWeight":"700"}],"label-caps":["14px",{"lineHeight":"20px","letterSpacing":"0.1em","fontWeight":"800"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-full mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[28px]">restaurant_menu</span><span class="font-headline-md text-[24px] text-primary tracking-tight">Flavoro Admin</span></div><div class="flex items-center gap-4"><a class="font-label-caps text-[12px] text-on-surface-variant hover:text-secondary" data-path="home" href="#">BACK TO SITE</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 h-[calc(100vh-64px)] w-64 bg-surface-container-low border-r border-outline-variant z-40"><nav class="p-4 flex flex-col gap-1" data-active-classes="bg-primary text-on-primary font-bold"><a aria-current="page" class="flex items-center px-4 py-3 rounded-lg transition-colors bg-primary text-on-primary font-bold" data-path="dashboard" href="#">DASHBOARD</a><a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-caps text-label-caps" data-path="reservations" href="#">RESERVATIONS</a><a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-caps text-label-caps" data-path="menu-management" href="#">MENU MANAGEMENT</a><a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-caps text-label-caps" data-path="staff" href="#">STAFF</a><a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-caps text-label-caps" data-path="analytics" href="#">ANALYTICS</a></nav></aside><main class="pl-64 pt-16 w-full"><div class="flex flex-col w-full px-gutter pb-section-gap gap-section-gap">
+<div class="grid grid-cols-4 gap-unit">
+<div class="bg-surface-container-low rounded-xl p-6 flex flex-col gap-4 relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<h3 class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Total Revenue</h3>
+<span class="material-symbols-outlined text-secondary">payments</span>
+</div>
+<div class="flex items-end justify-between z-10">
+<p class="font-headline-lg text-headline-lg text-primary">$45,231</p>
+<div class="flex items-center gap-1 text-primary-fixed-dim bg-primary-container px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span class="font-body-md text-[14px] font-bold">+12.5%</span>
+</div>
+</div>
+<svg class="absolute bottom-0 left-0 w-full h-16 opacity-20 text-secondary" preserveaspectratio="none" viewbox="0 0 100 30">
+<path d="M0,30 L0,20 Q10,25 20,15 T40,20 T60,10 T80,18 L100,5 L100,30 Z" fill="currentColor"></path>
+</svg>
+</div>
+<div class="bg-surface-container-low rounded-xl p-6 flex flex-col gap-4 group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<h3 class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Active Reservations</h3>
+<span class="material-symbols-outlined text-secondary">event_seat</span>
+</div>
+<div class="flex items-end justify-between">
+<p class="font-headline-lg text-headline-lg text-primary">142</p>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-6 flex flex-col gap-4 group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<h3 class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">New Customers</h3>
+<span class="material-symbols-outlined text-secondary">group_add</span>
+</div>
+<div class="flex items-end justify-between">
+<p class="font-headline-lg text-headline-lg text-primary">86</p>
+<div class="flex items-center gap-1 text-primary-fixed-dim bg-primary-container px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span class="font-body-md text-[14px] font-bold">+4.2%</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-6 flex flex-col gap-4 group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<h3 class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Avg Order Value</h3>
+<span class="material-symbols-outlined text-secondary">receipt_long</span>
+</div>
+<div class="flex items-end justify-between">
+<p class="font-headline-lg text-headline-lg text-primary">$124</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-gutter">
+<div class="col-span-8 bg-surface-container-low rounded-xl p-8 flex flex-col gap-6 shadow-sm">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary">Revenue Overview</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Monthly performance tracking</p>
+</div>
+<div class="flex gap-2">
+<button class="px-4 py-2 font-label-caps text-label-caps bg-surface rounded-full text-on-surface-variant hover:text-primary transition-colors">WK</button>
+<button class="px-4 py-2 font-label-caps text-label-caps bg-primary text-on-primary rounded-full transition-colors shadow-sm">MO</button>
+<button class="px-4 py-2 font-label-caps text-label-caps bg-surface rounded-full text-on-surface-variant hover:text-primary transition-colors">YR</button>
+</div>
+</div>
+<div class="w-full h-[300px] relative mt-4 flex items-end">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 800 300">
+<defs>
+<lineargradient id="lineGrad" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#fc8f34" stop-opacity="0.2"></stop>
+<stop offset="100%" stop-color="#fc8f34" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<path d="M0,280 L100,240 L200,180 L300,220 L400,140 L500,100 L600,160 L700,60 L800,90 L800,300 L0,300 Z" fill="url(#lineGrad)"></path>
+<path d="M0,280 L100,240 L200,180 L300,220 L400,140 L500,100 L600,160 L700,60 L800,90" fill="none" stroke="#fc8f34" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path>
+<circle cx="100" cy="240" fill="#fc8f34" r="4"></circle>
+<circle cx="200" cy="180" fill="#fc8f34" r="4"></circle>
+<circle cx="300" cy="220" fill="#fc8f34" r="4"></circle>
+<circle cx="400" cy="140" fill="#fc8f34" r="4"></circle>
+<circle cx="500" cy="100" fill="#fc8f34" r="4"></circle>
+<circle cx="600" cy="160" fill="#fc8f34" r="4"></circle>
+<circle cx="700" cy="60" fill="#01261f" r="6" stroke="#ffffff" stroke-width="2"></circle>
+</svg>
+<div class="absolute bottom-0 left-0 w-full flex justify-between text-on-surface-variant font-label-caps text-label-caps pt-4 translate-y-full">
+<span>JAN</span><span>FEB</span><span>MAR</span><span>APR</span><span>MAY</span><span>JUN</span><span>JUL</span><span>AUG</span>
+</div>
+</div>
+</div>
+<div class="col-span-4 bg-primary text-on-primary rounded-xl p-8 flex flex-col gap-6 shadow-md relative overflow-hidden">
+<div class="absolute -right-16 -top-16 w-64 h-64 bg-primary-container rounded-full blur-3xl opacity-50"></div>
+<h2 class="font-headline-md text-headline-md z-10">Popular Dishes</h2>
+<div class="flex-grow flex items-center justify-center relative z-10">
+<svg class="w-48 h-48 transform -rotate-90" viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="none" r="40" stroke="#1a3c34" stroke-width="12"></circle>
+<circle cx="50" cy="50" fill="none" r="40" stroke="#fc8f34" stroke-dasharray="251.2" stroke-dashoffset="62.8" stroke-width="12"></circle>
+<circle cx="50" cy="50" fill="none" r="40" stroke="#aacec3" stroke-dasharray="251.2" stroke-dashoffset="188.4" stroke-width="12"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center flex-col">
+<span class="font-headline-lg text-headline-lg">1.2k</span>
+<span class="font-label-caps text-label-caps text-primary-fixed-dim">ORDERS</span>
+</div>
+</div>
+<div class="flex flex-col gap-3 z-10">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-secondary-container"></div>
+<span class="font-body-md text-body-md">Truffle Risotto</span>
+</div>
+<span class="font-body-md text-body-md font-bold">45%</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-inverse-primary"></div>
+<span class="font-body-md text-body-md">Wagyu Ribeye</span>
+</div>
+<span class="font-body-md text-body-md font-bold">30%</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-primary-container"></div>
+<span class="font-body-md text-body-md">Seared Scallops</span>
+</div>
+<span class="font-body-md text-body-md font-bold">25%</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-8 flex flex-col gap-6 shadow-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md text-primary">Recent Reservations</h2>
+<button class="flex items-center gap-2 px-6 py-3 rounded-full bg-secondary text-on-secondary hover:bg-on-secondary-fixed transition-colors font-label-caps text-label-caps shadow-sm">
+        VIEW ALL
+        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b-2 border-surface-variant">
+<th class="py-4 font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Guest Name</th>
+<th class="py-4 font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Date</th>
+<th class="py-4 font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Time</th>
+<th class="py-4 font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Table</th>
+<th class="py-4 font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider text-right">Status</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md">
+<tr class="border-b border-surface-variant hover:bg-surface-container-high transition-colors group">
+<td class="py-4 py-4 flex items-center gap-4">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="A small, elegant portrait of a sophisticated woman smiling slightly. The lighting is warm and cinematic, suggesting an upscale dining environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcIONhKhh935fTWSM3gb_WphJJdZORuv1hjmuFa6AARk-3LEClb7tsxdr3msd8zPg8snjmJiiGP5mtY5KTAipVYIG8fCIQnIhTTKwCzhYLOe-xsqx5uxGYdUYBN6KDOeK6pXaPc62h0WCCkKCtIYKellvttgpcKu3GEVmjBmt8HntgP-7pONOxPfv_Q2XsaeGuAEf1rsYH2QVLeg05_A2UFEidwr3syfTvmO6oZOB1tci3NhytLG4WWw"/>
+<span class="font-title-lg text-title-lg text-primary">Eleanor Vance</span>
+</td>
+<td class="py-4 text-on-surface">Oct 24, 2023</td>
+<td class="py-4 text-on-surface">19:30</td>
+<td class="py-4 text-on-surface">Window 04</td>
+<td class="py-4 text-right">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps text-[12px]">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Confirmed
+              </span>
+</td>
+</tr>
+<tr class="border-b border-surface-variant hover:bg-surface-container-high transition-colors group">
+<td class="py-4 flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-primary font-title-lg text-title-lg">M</div>
+<span class="font-title-lg text-title-lg text-primary">Marcus Thorne</span>
+</td>
+<td class="py-4 text-on-surface">Oct 24, 2023</td>
+<td class="py-4 text-on-surface">20:00</td>
+<td class="py-4 text-on-surface">Main 12</td>
+<td class="py-4 text-right">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps text-[12px]">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Pending
+              </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors group">
+<td class="py-4 flex items-center gap-4">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="A small, elegant portrait of an older gentleman with silver hair. The lighting is warm and cinematic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWyaqbJN1_sf8oW7xuatVruVBP1vTraTr_9-7BesiH4weNpDhqCdXicfGSXDCoVVXc55xvOjnwGd1C3Z8Yd6_irBZ_MqHbdLMmsIb0P5erjL4vRiZuFjtBG0YejgPXPQ81KVBt_-i5cYQf9oQl8HTS6zPF-0nEp0djCJiX-n78_67roUjs88Zx7Ze9TdmIi8FrAcUcMHLTacaTp7fEnuJ5u4iqCDQdrhAf8Xyzq1OwAj4S629l9pJUjw"/>
+<span class="font-title-lg text-title-lg text-primary">Julian Sorel</span>
+</td>
+<td class="py-4 text-on-surface">Oct 25, 2023</td>
+<td class="py-4 text-on-surface">18:45</td>
+<td class="py-4 text-on-surface">Patio 02</td>
+<td class="py-4 text-right">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps text-[12px]">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Confirmed
+              </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></main></body></html>
